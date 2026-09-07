@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
   description:
     "2026 gelir vergisi dilimlerine göre maaş net-brüt hesaplayıcı, %1/%10/%20 oranlarıyla KDV dahil-hariç hesaplayıcı ve kıdem tazminatı hesaplayıcı.",
+  verification: {
+    google: "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
