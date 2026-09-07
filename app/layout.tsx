@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HesaplaCepte - Maaş, KDV ve Kıdem Tazminatı Hesaplama",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    template: `%s | ${SITE_NAME}`,
+    default: `${SITE_NAME} - Maaş, KDV ve Kıdem Tazminatı Hesaplama`,
+  },
   description:
     "2026 gelir vergisi dilimlerine göre maaş net-brüt hesaplayıcı, %1/%10/%20 oranlarıyla KDV dahil-hariç hesaplayıcı ve kıdem tazminatı hesaplayıcı.",
 };
