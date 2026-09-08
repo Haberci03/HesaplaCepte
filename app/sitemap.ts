@@ -19,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bilesik-faiz-hesaplama", priority: 0.9 },
     { path: "/kira-artis-hesaplama", priority: 0.9 },
     { path: "/kredi-karti-asgari-odeme-hesaplama", priority: 0.9 },
+    { path: "/hakkimizda", priority: 0.3 },
+    { path: "/gizlilik-politikasi", priority: 0.3 },
+    { path: "/iletisim", priority: 0.3 },
   ];
 
   return routes.map(({ path, priority }) => ({
