@@ -19,8 +19,8 @@ export default function IletisimPage() {
       </p>
 
       <p>
-        <a href="mailto:iletisim@hesaplacepte.com" className="font-medium">
-          iletisim@hesaplacepte.com
+        <a href="mailto:ozcankurt03@gmail.com" className="font-medium">
+          ozcankurt03@gmail.com
         </a>
       </p>
 
