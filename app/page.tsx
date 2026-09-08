@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları",
   },
   description:
-    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz ve kira artışı hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
+    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı ve kredi kartı asgari ödeme hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
   alternates: { canonical: "/" },
 };
 
@@ -83,6 +83,12 @@ const TOOLS = [
     title: "Kira Artış Oranı Hesaplama",
     description:
       "Güncel TÜFE 12 aylık ortalama oranına göre yeni kira tutarınızı hesaplayın.",
+  },
+  {
+    href: "/kredi-karti-asgari-odeme-hesaplama",
+    title: "Kredi Kartı Asgari Ödeme Hesaplama",
+    description:
+      "Kart limitiniz ve dönem borcunuza göre asgari ödeme tutarınızı ve kalan bakiyenizi hesaplayın.",
   },
 ];
 

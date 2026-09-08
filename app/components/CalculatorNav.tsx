@@ -16,6 +16,7 @@ const TABS = [
   { href: "/vki-hesaplama", label: "VKİ Hesaplama" },
   { href: "/bilesik-faiz-hesaplama", label: "Bileşik Faiz" },
   { href: "/kira-artis-hesaplama", label: "Kira Artışı" },
+  { href: "/kredi-karti-asgari-odeme-hesaplama", label: "Asgari Ödeme" },
 ] as const;
 
 export default function CalculatorNav() {

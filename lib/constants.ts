@@ -93,3 +93,10 @@ export const BMI_CATEGORIES = [
 // Kira artışında uygulanabilecek TÜFE 12 aylık ortalama değişim oranı (%)
 // Dönem: Aralık 2025 TÜİK verisi - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
 export const RENT_INCREASE_TUFE_RATE_DEFAULT = 34.88;
+
+// Kredi kartı asgari ödeme tutarı için limit eşiği ve oranları
+// Kaynak: BDDK'nın 26.09.2024 tarihli 10970 sayılı kararı
+// Dönem: 2024'ten itibaren yürürlükte, 2026'da hâlâ geçerli
+export const MINIMUM_PAYMENT_LIMIT_THRESHOLD = 50_000; // TL
+export const MINIMUM_PAYMENT_RATE_LOW = 0.2; // Limit 50.000 TL ve altı
+export const MINIMUM_PAYMENT_RATE_HIGH = 0.4; // Limit 50.000 TL üzeri

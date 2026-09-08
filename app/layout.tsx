@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: `${SITE_NAME} - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları`,
   },
   description:
-    "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz ve kira artışı hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
+    "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı ve kredi kartı asgari ödeme hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
   verification: {
     google: "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
   },

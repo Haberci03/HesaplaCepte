@@ -283,3 +283,26 @@ export const RENT_INCREASE_FAQ_ITEMS: FaqItem[] = [
       "Bu sınır konut kiraları için geçerlidir; iş yeri kiraları farklı kurallara tabi olabilir. Ayrıca taraflar sözleşmede bu oranın altında bir artış üzerinde anlaşabilir. Kesin ve güncel bilgi için TÜİK verilerini ve ilgili mevzuatı kontrol etmeniz önerilir.",
   },
 ];
+
+export const CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Kredi kartı asgari ödeme tutarı nasıl hesaplanır?",
+    answer:
+      "BDDK'nın 26.09.2024 tarihli 10970 sayılı kararına göre: kart limitiniz 50.000 TL ve altındaysa asgari ödeme, dönem borcunuzun %20'sidir; kart limitiniz 50.000 TL'nin üzerindeyse asgari ödeme dönem borcunuzun %40'ıdır.",
+  },
+  {
+    question: "Sadece asgari ödeme yaparsam ne olur?",
+    answer:
+      "Asgari ödeme dışında kalan bakiye, bir sonraki döneme akdi faiziyle birlikte devreder. Bunu düzenli olarak tekrarlamak, biriken faizler nedeniyle toplam borcunuzun zamanla katlanarak büyümesine (borç sarmalına) yol açabilir.",
+  },
+  {
+    question: "Asgari ödeme yerine ne yapmalıyım?",
+    answer:
+      "Mümkünse dönem borcunuzun tamamını, en azından mümkün olan en yüksek tutarı ödemeniz, faiz yükünü azaltmanın ve borcun büyümesini önlemenin en etkili yoludur. Ödeme güçlüğü yaşıyorsanız bankanızla yeniden yapılandırma seçeneklerini görüşmeniz önerilir.",
+  },
+  {
+    question: "Bu hesaplayıcı faiz tutarını da hesaplıyor mu?",
+    answer:
+      "Hayır. Bu araç yalnızca asgari ödeme tutarını ve kalan bakiyeyi gösterir. Kartınıza uygulanan akdi/gecikme faiz oranı bankadan bankaya ve dönemden döneme değişebileceğinden, kesin faiz maliyeti için bankanızın güncel oranlarını kontrol etmeniz önerilir.",
+  },
+];
