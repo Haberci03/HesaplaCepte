@@ -11,6 +11,7 @@ const TABS = [
   { href: "/yillik-izin-hesaplama", label: "Yıllık İzin" },
   { href: "/ihbar-tazminati-hesaplama", label: "İhbar Tazminatı" },
   { href: "/yuzde-hesaplama", label: "Yüzde Hesaplama" },
+  { href: "/enflasyon-hesaplama", label: "Enflasyon Hesaplama" },
 ] as const;
 
 export default function CalculatorNav() {

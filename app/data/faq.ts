@@ -173,3 +173,26 @@ export const PERCENTAGE_FAQ_ITEMS: FaqItem[] = [
       "Eski değerden (X) yeni değere (Y) değişim yüzdesi ((Y - X) ÷ X) × 100 formülüyle hesaplanır. Sonuç pozitifse artış (zam), negatifse azalış (indirim) anlamına gelir.",
   },
 ];
+
+export const INFLATION_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Enflasyon (TÜFE) hesaplayıcısı nasıl çalışır?",
+    answer:
+      "Girdiğiniz tutar, seçtiğiniz başlangıç ve bitiş yılının Aralık ayı TÜFE endeks değerleri oranlanarak güncel karşılığına çevrilir: Bitiş Tutarı = Tutar × (Bitiş Yılı Endeksi ÷ Başlangıç Yılı Endeksi).",
+  },
+  {
+    question: "TÜFE endeksi neyi ifade eder?",
+    answer:
+      "TÜFE (Tüketici Fiyat Endeksi), belirli bir sepetteki mal ve hizmetlerin fiyatlarındaki değişimi ölçer. Bu hesaplayıcıda 2012 Aralık ayı 100 baz alınarak, TÜİK'in resmi yıllık değişim oranlarından zincirleme olarak türetilmiş yıl sonu endeks değerleri kullanılmaktadır.",
+  },
+  {
+    question: "Bu hesaplama neden yaklaşık kabul edilmeli?",
+    answer:
+      "Hesaplama, yalnızca yıl sonu (Aralık ayı) TÜFE endeks değerlerini karşılaştırır. Yıl içindeki belirli bir ay için hassas bir hesaplama gerekiyorsa, TÜİK'in aylık yayınladığı güncel TÜFE verilerine bakmanız gerekir.",
+  },
+  {
+    question: "Toplam artış yüzdesi ne anlama gelir?",
+    answer:
+      "Toplam artış yüzdesi, seçilen iki yıl sonu arasında TÜFE endeksinin ne kadar arttığını gösterir; yani aynı satın alma gücünü korumak için tutarın yaklaşık ne kadar artması gerektiğini ifade eder.",
+  },
+];

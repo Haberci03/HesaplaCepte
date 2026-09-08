@@ -60,3 +60,23 @@ export const NOTICE_PERIOD_TIERS = [
   { maxYears: 3, weeks: 6 }, // 1,5 - 3 yıl arası
   { maxYears: Infinity, weeks: 8 }, // 3 yıldan fazla
 ] as const;
+
+// Yıl sonu (Aralık) TÜFE endeksi, 2012 Aralık = 100 baz alınarak zincirleme hesaplanmıştır
+// Dönem: 2012-2025 arası yıl sonu değerleri, TÜİK'in resmi yıllık değişim oranlarından türetilmiştir
+// Kaynak: TÜİK yıllık TÜFE değişim oranları (yaklaşık, yıl sonu bazlı)
+export const TUFE_YEAR_END_INDEX: Record<number, number> = {
+  2012: 100,
+  2013: 107.4,
+  2014: 116.18,
+  2015: 126.42,
+  2016: 137.2,
+  2017: 153.55,
+  2018: 184.72,
+  2019: 206.6,
+  2020: 236.76,
+  2021: 322.19,
+  2022: 529.29,
+  2023: 872.14,
+  2024: 1259.1,
+  2025: 1647.9,
+};

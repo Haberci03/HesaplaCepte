@@ -54,6 +54,12 @@ const TOOLS = [
     description:
       "Bir sayının yüzdesini, yüzde oranını veya zam/indirim yüzdesini kolayca hesaplayın.",
   },
+  {
+    href: "/enflasyon-hesaplama",
+    title: "Enflasyon Hesaplama",
+    description:
+      "2012-2025 yıl sonu TÜFE endekslerine göre geçmiş bir tutarın bugünkü karşılığını hesaplayın.",
+  },
 ];
 
 export default function Home() {
