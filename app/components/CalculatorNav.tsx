@@ -18,6 +18,10 @@ const TABS = [
   { href: "/bilesik-faiz-hesaplama", label: "Bileşik Faiz" },
   { href: "/kira-artis-hesaplama", label: "Kira Artışı" },
   { href: "/kredi-karti-asgari-odeme-hesaplama", label: "Asgari Ödeme" },
+  { href: "/tapu-harci-hesaplama", label: "Tapu Harcı" },
+  { href: "/gecikme-zammi-hesaplama", label: "Gecikme Zammı" },
+  { href: "/altin-doviz-cevirici", label: "Altın/Döviz Çevirici" },
+  { href: "/tarih-farki-hesaplama", label: "Tarih Farkı" },
 ] as const;
 
 type Href = (typeof TABS)[number]["href"];
@@ -34,6 +38,8 @@ const CATEGORIES: { title: string; hrefs: Href[] }[] = [
       "/kdv-hesaplama",
       "/kidem-tazminati-hesaplama",
       "/kredi-karti-asgari-odeme-hesaplama",
+      "/tapu-harci-hesaplama",
+      "/gecikme-zammi-hesaplama",
     ],
   },
   {
@@ -47,11 +53,17 @@ const CATEGORIES: { title: string; hrefs: Href[] }[] = [
       "/bilesik-faiz-hesaplama",
       "/enflasyon-hesaplama",
       "/kira-artis-hesaplama",
+      "/altin-doviz-cevirici",
     ],
   },
   {
     title: "Genel",
-    hrefs: ["/yuzde-hesaplama", "/yakit-masrafi-hesaplama", "/vki-hesaplama"],
+    hrefs: [
+      "/yuzde-hesaplama",
+      "/yakit-masrafi-hesaplama",
+      "/vki-hesaplama",
+      "/tarih-farki-hesaplama",
+    ],
   },
 ];
 

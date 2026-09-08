@@ -100,3 +100,18 @@ export const RENT_INCREASE_TUFE_RATE_DEFAULT = 34.88;
 export const MINIMUM_PAYMENT_LIMIT_THRESHOLD = 50_000; // TL
 export const MINIMUM_PAYMENT_RATE_LOW = 0.2; // Limit 50.000 TL ve altı
 export const MINIMUM_PAYMENT_RATE_HIGH = 0.4; // Limit 50.000 TL üzeri
+
+// Tapu harcı oranı (satış bedeli üzerinden, alıcı ve satıcı payı ayrı ayrı)
+// Kaynak: 492 sayılı Harçlar Kanunu'na bağlı 4 sayılı tarife
+// Dönem: 2026 yılı, güncel oran
+export const TITLE_DEED_FEE_RATE_BUYER = 0.02; // Alıcı payı
+export const TITLE_DEED_FEE_RATE_SELLER = 0.02; // Satıcı payı
+
+// Tapu döner sermaye bedeli (yaklaşık; bölgeye göre değişebilir)
+// Dönem: 2026 yılı yaklaşık ortalama - kesin tutar için Tapu Sicil Müdürlüğü'ne bakılmalı
+export const TITLE_DEED_REVOLVING_FUND_FEE_APPROX = 2_500;
+
+// Gecikme zammı aylık oranı (tam aylar için; ay kesirleri/artık günler için günlük oran = aylık oran / 30)
+// Kaynak: 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun, Cumhurbaşkanı kararı
+// Dönem: 13.11.2025 tarihinden itibaren geçerli oran - Cumhurbaşkanı kararıyla değişebilir
+export const LATE_PAYMENT_SURCHARGE_MONTHLY_RATE = 0.037;

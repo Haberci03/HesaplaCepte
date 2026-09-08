@@ -306,3 +306,85 @@ export const CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS: FaqItem[] = [
       "Hayır. Bu araç yalnızca asgari ödeme tutarını ve kalan bakiyeyi gösterir. Kartınıza uygulanan akdi/gecikme faiz oranı bankadan bankaya ve dönemden döneme değişebileceğinden, kesin faiz maliyeti için bankanızın güncel oranlarını kontrol etmeniz önerilir.",
   },
 ];
+
+export const TITLE_DEED_FEE_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Tapu harcı nasıl hesaplanır?",
+    answer:
+      "Tapu harcı, satış bedelinin %4'ü olarak hesaplanır. Bu oranın yarısı (%2) alıcıdan, diğer yarısı (%2) satıcıdan tahsil edilir. Uygulamada taraflar aksini kararlaştırmadıkça harcın tamamının alıcı tarafından ödenmesi de yaygındır.",
+  },
+  {
+    question: "Tapu harcı matrahı satış bedeli ile aynı mıdır?",
+    answer:
+      "Hayır, her zaman değil. 492 sayılı Harçlar Kanunu'na göre beyan edilen satış bedeli, taşınmazın belediye tarafından belirlenen emlak vergisi (rayiç) değerinden düşük olamaz. Beyan edilen bedel bu değerin altındaysa, harç emlak vergisi değeri üzerinden hesaplanır.",
+  },
+  {
+    question: "Döner sermaye bedeli nedir?",
+    answer:
+      "Döner sermaye bedeli, tapu işlemleri sırasında harç dışında ayrıca alınan sabit bir hizmet bedelidir ve il/bölgeye göre değişebilir. Bu hesaplayıcıda yaklaşık bir tutar gösterilmektedir; kesin tutarı işlemi yapacağınız Tapu Sicil Müdürlüğü'nden öğrenebilirsiniz.",
+  },
+  {
+    question: "Bu hesaplayıcı kesin ve resmi bir tutar verir mi?",
+    answer:
+      "Hayır. Bu araç yalnızca bilgilendirme amaçlıdır. Kesin harç tutarı, taşınmazın emlak vergisi değeri, olası istisnalar (ilk konut alımı gibi) ve döner sermaye bedeli gibi faktörlere göre değişebilir; kesin tutar için Tapu Sicil Müdürlüğü'ne başvurmanız önerilir.",
+  },
+];
+
+export const DATE_DIFF_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Tarih farkı nasıl hesaplanır?",
+    answer:
+      "İki tarih arasındaki fark; takvim ayları ve günleri dikkate alınarak yıl, ay ve gün olarak ayrı ayrı hesaplanır. Örneğin 1 Ocak 2020 ile 15 Mart 2023 arasındaki fark 3 yıl 2 ay 14 gündür.",
+  },
+  {
+    question: "Toplam gün sayısı ile yıl/ay/gün farkı neden farklı olabilir?",
+    answer:
+      "Toplam gün sayısı, iki tarih arasındaki tüm günlerin ham toplamıdır. Yıl/ay/gün ayrımı ise takvim aylarının farklı gün sayılarına (28, 29, 30, 31 gün) sahip olmasından dolayı hesaplanır; bu nedenle iki gösterim birbirini tamamlayan farklı bakış açılarıdır.",
+  },
+  {
+    question: "Bu hesaplayıcıyı ne için kullanabilirim?",
+    answer:
+      "Yaş hesaplama, iki tarih arasındaki hizmet/çalışma süresini bulma, bir etkinliğe kalan süreyi görme veya iki tarih arasındaki süreyi belgelemek gibi birçok günlük hesaplama için kullanabilirsiniz.",
+  },
+];
+
+export const CURRENCY_CONVERTER_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Bu hesaplayıcı canlı döviz/altın kuru veriyor mu?",
+    answer:
+      "Hayır. Bu araç canlı piyasa verisi çekmez; güncel birim fiyatı (gram altın fiyatı veya döviz kuru) siz girersiniz. Hesaplayıcı yalnızca girdiğiniz miktar ile bu fiyatı çarpar veya böler.",
+  },
+  {
+    question: "Güncel altın gramı veya döviz kurunu nereden öğrenebilirim?",
+    answer:
+      "Güncel fiyatları bankanızın uygulamasından, kuyumcunuzdan veya güvenilir finans haber kaynaklarından teyit edebilirsiniz. Alış ve satış fiyatları arasında fark olabileceğini unutmayın.",
+  },
+  {
+    question: "TL'den dövize/altına çevirme nasıl çalışır?",
+    answer:
+      "Bu modda, girdiğiniz TL tutarını girdiğiniz birim fiyata bölerek kaç gram altın veya döviz birimi karşılığı geldiğini hesaplar: Miktar = TL Tutarı ÷ Birim Fiyat.",
+  },
+];
+
+export const LATE_PAYMENT_SURCHARGE_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Gecikme zammı nedir?",
+    answer:
+      "Gecikme zammı, vadesinde ödenmeyen kamu alacaklarına (vergi, ceza, harç vb.) 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun uyarınca uygulanan bir tür gecikme faizidir.",
+  },
+  {
+    question: "Gecikme zammı oranı nasıl uygulanır?",
+    answer:
+      "Tam aylar için aylık %3,7 oranı doğrudan uygulanır. Bir aydan kısa süreler (artık günler) için ise bu aylık oranın 30'a bölünmesiyle bulunan günlük oran kullanılır.",
+  },
+  {
+    question: "Gecikme zammı oranı sabit midir?",
+    answer:
+      "Hayır. Bu oran Cumhurbaşkanı kararıyla değiştirilebilir ve zaman içinde güncellenir. Bu hesaplayıcıda 13.11.2025 tarihinden itibaren geçerli olan %3,7 oranı kullanılmaktadır; işleminizin ait olduğu döneme göre farklı bir oran geçerli olabilir.",
+  },
+  {
+    question: "Bu hesaplayıcı kesin ve resmi bir tutar verir mi?",
+    answer:
+      "Hayır. Bu araç yalnızca bilgilendirme amaçlıdır ve genel bir yaklaşım sunar. Kesin gecikme zammı tutarı için ilgili vergi dairesine veya kuruma başvurmanız önerilir.",
+  },
+];

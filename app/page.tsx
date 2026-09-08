@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları",
   },
   description:
-    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı ve kredi kartı asgari ödeme hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
+    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı, kredi kartı asgari ödeme, tapu harcı, gecikme zammı, tarih farkı ve altın/döviz çevirme hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
   alternates: { canonical: "/" },
 };
 
@@ -90,6 +90,30 @@ const TOOLS = [
     description:
       "Kart limitiniz ve dönem borcunuza göre asgari ödeme tutarınızı ve kalan bakiyenizi hesaplayın.",
   },
+  {
+    href: "/tapu-harci-hesaplama",
+    title: "Tapu Harcı Hesaplama",
+    description:
+      "Satış bedeline göre alıcı ve satıcı tapu harcını, toplam tutarı hesaplayın.",
+  },
+  {
+    href: "/gecikme-zammi-hesaplama",
+    title: "Gecikme Zammı Hesaplama",
+    description:
+      "Borç aslı ve gecikme süresine göre güncel oranla gecikme zammını hesaplayın.",
+  },
+  {
+    href: "/altin-doviz-cevirici",
+    title: "Gram Altın / Döviz Çevirici",
+    description:
+      "Girdiğiniz güncel kur veya fiyata göre miktarınızın TL karşılığını hesaplayın.",
+  },
+  {
+    href: "/tarih-farki-hesaplama",
+    title: "Tarih Farkı Hesaplama",
+    description:
+      "İki tarih arasındaki farkı yıl, ay, gün ve toplam gün olarak hesaplayın.",
+  },
 ];
 
 export default function Home() {
@@ -100,7 +124,8 @@ export default function Home() {
           HesaplaCepte
         </h1>
         <p className="mt-3 max-w-lg text-balance text-zinc-600 dark:text-zinc-400">
-          Güncel oranlarla ücretsiz maaş, vergi ve iş hukuku hesaplama araçları
+          Güncel oranlarla ücretsiz maaş, vergi, finans ve günlük hesaplama
+          araçları
         </p>
       </header>
 
