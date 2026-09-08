@@ -57,7 +57,7 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
         {post.title}
       </h1>
 
-      <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70 dark:text-white/70 [&_a]:underline [&_a]:underline-offset-2 [&_blockquote]:border-l-2 [&_blockquote]:border-black/20 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:dark:border-white/20 [&_h2]:mb-2 [&_h2]:mt-8 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-black [&_h2]:dark:text-white [&_h3]:mb-2 [&_h3]:mt-6 [&_h3]:font-semibold [&_h3]:text-black [&_h3]:dark:text-white [&_li]:mb-1 [&_ol]:list-decimal [&_ol]:space-y-1 [&_ol]:pl-5 [&_strong]:font-semibold [&_strong]:text-black [&_strong]:dark:text-white [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5">
+      <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70 dark:text-white/70 [&_a]:underline [&_a]:underline-offset-2 [&_blockquote]:border-l-2 [&_blockquote]:border-black/20 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:dark:border-white/20 [&_h1]:mb-2 [&_h1]:mt-8 [&_h1]:text-xl [&_h1]:font-semibold [&_h1]:text-black [&_h1]:dark:text-white [&_h2]:mb-2 [&_h2]:mt-8 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-black [&_h2]:dark:text-white [&_h3]:mb-2 [&_h3]:mt-6 [&_h3]:font-semibold [&_h3]:text-black [&_h3]:dark:text-white [&_li]:mb-1 [&_ol]:list-decimal [&_ol]:space-y-1 [&_ol]:pl-5 [&_strong]:font-semibold [&_strong]:text-black [&_strong]:dark:text-white [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {post.content}
         </ReactMarkdown>

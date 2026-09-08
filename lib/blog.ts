@@ -34,6 +34,14 @@ function readMeta(file: string): BlogPostMeta {
   };
 }
 
+// Sayfa zaten frontmatter'daki title'ı büyük bir <h1> olarak gösterir; içerik
+// aynı başlığı tekrarlayan bir "# Başlık" satırıyla başlıyorsa bunu kırpar.
+function stripLeadingH1(content: string): string {
+  const trimmed = content.trimStart();
+  const match = trimmed.match(/^#\s+[^\n]+\n?/);
+  return match ? trimmed.slice(match[0].length).trimStart() : content;
+}
+
 function readPost(file: string): BlogPost {
   const raw = fs.readFileSync(path.join(BLOG_DIR, file), "utf-8");
   const { data, content } = matter(raw);
@@ -44,7 +52,7 @@ function readPost(file: string): BlogPost {
     description: data.description,
     date: data.date,
     relatedCalculator: data.relatedCalculator,
-    content,
+    content: stripLeadingH1(content),
   };
 }
 
