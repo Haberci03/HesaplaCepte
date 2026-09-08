@@ -3,31 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CALCULATORS } from "@/lib/calculators";
 
-const TABS = [
-  { href: "/maas-hesaplama", label: "Maaş Hesaplama" },
-  { href: "/kdv-hesaplama", label: "KDV Hesaplama" },
-  { href: "/kidem-tazminati-hesaplama", label: "Kıdem Tazminatı" },
-  { href: "/kredi-taksit-hesaplama", label: "Kredi Taksit" },
-  { href: "/yillik-izin-hesaplama", label: "Yıllık İzin" },
-  { href: "/ihbar-tazminati-hesaplama", label: "İhbar Tazminatı" },
-  { href: "/yuzde-hesaplama", label: "Yüzde Hesaplama" },
-  { href: "/enflasyon-hesaplama", label: "Enflasyon Hesaplama" },
-  { href: "/yakit-masrafi-hesaplama", label: "Yakıt Masrafı" },
-  { href: "/vki-hesaplama", label: "VKİ Hesaplama" },
-  { href: "/bilesik-faiz-hesaplama", label: "Bileşik Faiz" },
-  { href: "/kira-artis-hesaplama", label: "Kira Artışı" },
-  { href: "/kredi-karti-asgari-odeme-hesaplama", label: "Asgari Ödeme" },
-  { href: "/tapu-harci-hesaplama", label: "Tapu Harcı" },
-  { href: "/gecikme-zammi-hesaplama", label: "Gecikme Zammı" },
-  { href: "/altin-doviz-cevirici", label: "Altın/Döviz Çevirici" },
-  { href: "/tarih-farki-hesaplama", label: "Tarih Farkı" },
-] as const;
+const NAV_ITEMS = [...CALCULATORS, { href: "/blog", label: "Blog" }] as const;
 
-type Href = (typeof TABS)[number]["href"];
+type Href = (typeof NAV_ITEMS)[number]["href"];
 
 const LABEL_BY_HREF = Object.fromEntries(
-  TABS.map((t) => [t.href, t.label])
+  NAV_ITEMS.map((t) => [t.href, t.label])
 ) as Record<Href, string>;
 
 const CATEGORIES: { title: string; hrefs: Href[] }[] = [
@@ -65,7 +48,17 @@ const CATEGORIES: { title: string; hrefs: Href[] }[] = [
       "/tarih-farki-hesaplama",
     ],
   },
+  {
+    title: "Blog",
+    hrefs: ["/blog"],
+  },
 ];
+
+function isActive(pathname: string | null, href: Href): boolean {
+  if (!pathname) return false;
+  if (href === "/blog") return pathname === "/blog" || pathname.startsWith("/blog/");
+  return pathname === href;
+}
 
 export default function CalculatorNav() {
   const pathname = usePathname();
@@ -85,18 +78,18 @@ export default function CalculatorNav() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const activeLabel =
-    (pathname && LABEL_BY_HREF[pathname as Href]) || "Hesaplayıcı Seç";
+  const activeItem = NAV_ITEMS.find((t) => isActive(pathname, t.href));
+  const activeLabel = activeItem?.label ?? "Hesaplayıcı Seç";
 
   return (
     <>
       <nav className="hidden flex-wrap justify-center gap-1 rounded-2xl border border-black/10 bg-white/70 p-1 dark:border-white/10 dark:bg-white/5 md:flex">
-        {TABS.map((t) => (
+        {NAV_ITEMS.map((t) => (
           <Link
             key={t.href}
             href={t.href}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-              pathname === t.href
+              isActive(pathname, t.href)
                 ? "bg-black text-white dark:bg-white dark:text-black"
                 : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
             }`}
@@ -143,7 +136,7 @@ export default function CalculatorNav() {
                     href={href}
                     onClick={() => setOpen(false)}
                     className={`block rounded-lg px-3 py-2 text-sm ${
-                      pathname === href
+                      isActive(pathname, href)
                         ? "bg-black text-white dark:bg-white dark:text-black"
                         : "text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
                     }`}

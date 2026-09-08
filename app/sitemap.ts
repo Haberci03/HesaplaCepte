@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
+import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -23,15 +24,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/gecikme-zammi-hesaplama", priority: 0.9 },
     { path: "/altin-doviz-cevirici", priority: 0.9 },
     { path: "/tarih-farki-hesaplama", priority: 0.9 },
+    { path: "/blog", priority: 0.6 },
     { path: "/hakkimizda", priority: 0.3 },
     { path: "/gizlilik-politikasi", priority: 0.3 },
     { path: "/iletisim", priority: 0.3 },
   ];
 
-  return routes.map(({ path, priority }) => ({
+  const blogRoutes = getAllPosts().map((post) => ({
+    path: `/blog/${post.slug}`,
+    priority: 0.6,
+  }));
+
+  return [...routes, ...blogRoutes].map(({ path, priority }) => ({
     url: `${SITE_URL}${path}`,
     lastModified,
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority,
   }));
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const FOOTER_LINKS = [
   { href: "/", label: "Ana Sayfa" },
+  { href: "/blog", label: "Blog" },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/gizlilik-politikasi", label: "Gizlilik Politikası" },
   { href: "/iletisim", label: "İletişim" },
