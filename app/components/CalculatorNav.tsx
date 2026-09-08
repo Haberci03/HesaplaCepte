@@ -3,15 +3,23 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BookOpen } from "lucide-react";
 import { CALCULATORS } from "@/lib/calculators";
 
-const NAV_ITEMS = [...CALCULATORS, { href: "/blog", label: "Blog" }] as const;
+const NAV_ITEMS = [
+  ...CALCULATORS,
+  { href: "/blog", label: "Blog", icon: BookOpen },
+] as const;
 
 type Href = (typeof NAV_ITEMS)[number]["href"];
 
 const LABEL_BY_HREF = Object.fromEntries(
   NAV_ITEMS.map((t) => [t.href, t.label])
 ) as Record<Href, string>;
+
+const ICON_BY_HREF = Object.fromEntries(
+  NAV_ITEMS.map((t) => [t.href, t.icon])
+) as Record<Href, (typeof NAV_ITEMS)[number]["icon"]>;
 
 const CATEGORIES: { title: string; hrefs: Href[] }[] = [
   {
@@ -80,23 +88,28 @@ export default function CalculatorNav() {
 
   const activeItem = NAV_ITEMS.find((t) => isActive(pathname, t.href));
   const activeLabel = activeItem?.label ?? "Hesaplayıcı Seç";
+  const ActiveIcon = activeItem?.icon;
 
   return (
     <>
       <nav className="hidden flex-wrap justify-center gap-1 rounded-2xl border border-black/10 bg-white/70 p-1 dark:border-white/10 dark:bg-white/5 md:flex">
-        {NAV_ITEMS.map((t) => (
-          <Link
-            key={t.href}
-            href={t.href}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-              isActive(pathname, t.href)
-                ? "bg-black text-white dark:bg-white dark:text-black"
-                : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
-            }`}
-          >
-            {t.label}
-          </Link>
-        ))}
+        {NAV_ITEMS.map((t) => {
+          const Icon = t.icon;
+          return (
+            <Link
+              key={t.href}
+              href={t.href}
+              className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                isActive(pathname, t.href)
+                  ? "bg-black text-white dark:bg-white dark:text-black"
+                  : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
+              }`}
+            >
+              <Icon className="h-4 w-4 shrink-0" aria-hidden />
+              {t.label}
+            </Link>
+          );
+        })}
       </nav>
 
       <div ref={containerRef} className="relative w-full max-w-2xl md:hidden">
@@ -106,7 +119,15 @@ export default function CalculatorNav() {
           aria-expanded={open}
           className="flex w-full items-center justify-between gap-2 rounded-xl border border-black/10 bg-white/70 px-4 py-3 text-sm font-medium backdrop-blur dark:border-white/10 dark:bg-white/5"
         >
-          <span>{activeLabel}</span>
+          <span className="flex items-center gap-2">
+            {ActiveIcon && (
+              <ActiveIcon
+                className="h-4 w-4 shrink-0 text-black/50 dark:text-white/50"
+                aria-hidden
+              />
+            )}
+            {activeLabel}
+          </span>
           <svg
             aria-hidden
             viewBox="0 0 20 20"
@@ -130,20 +151,24 @@ export default function CalculatorNav() {
                 <p className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-black/40 dark:text-white/40">
                   {cat.title}
                 </p>
-                {cat.hrefs.map((href) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={() => setOpen(false)}
-                    className={`block rounded-lg px-3 py-2 text-sm ${
-                      isActive(pathname, href)
-                        ? "bg-black text-white dark:bg-white dark:text-black"
-                        : "text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
-                    }`}
-                  >
-                    {LABEL_BY_HREF[href]}
-                  </Link>
-                ))}
+                {cat.hrefs.map((href) => {
+                  const Icon = ICON_BY_HREF[href];
+                  return (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm ${
+                        isActive(pathname, href)
+                          ? "bg-black text-white dark:bg-white dark:text-black"
+                          : "text-black/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/10"
+                      }`}
+                    >
+                      <Icon className="h-4 w-4 shrink-0" aria-hidden />
+                      {LABEL_BY_HREF[href]}
+                    </Link>
+                  );
+                })}
               </div>
             ))}
           </div>

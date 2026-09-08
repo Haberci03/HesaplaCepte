@@ -3,6 +3,7 @@ import Link from "next/link";
 import Disclaimer from "@/app/components/Disclaimer";
 import JsonLd from "@/app/components/JsonLd";
 import { buildWebSiteSchema } from "@/lib/jsonLd";
+import { CALCULATOR_ICON_BY_HREF, type CalculatorHref } from "@/lib/calculators";
 
 export const metadata: Metadata = {
   title: {
@@ -133,21 +134,27 @@ export default function Home() {
       </header>
 
       <main className="grid w-full max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {TOOLS.map((tool) => (
-          <Link
-            key={tool.href}
-            href={tool.href}
-            className="group rounded-2xl border border-black/10 bg-white/70 p-6 shadow-sm backdrop-blur transition-colors hover:border-black/20 dark:border-white/10 dark:bg-white/5 dark:hover:border-white/20"
-          >
-            <h2 className="font-semibold">{tool.title}</h2>
-            <p className="mt-2 text-sm text-black/60 dark:text-white/60">
-              {tool.description}
-            </p>
-            <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-black/80 group-hover:gap-1.5 dark:text-white/80">
-              Hesapla <span aria-hidden>→</span>
-            </span>
-          </Link>
-        ))}
+        {TOOLS.map((tool) => {
+          const Icon = CALCULATOR_ICON_BY_HREF[tool.href as CalculatorHref];
+          return (
+            <Link
+              key={tool.href}
+              href={tool.href}
+              className="group rounded-2xl border border-black/10 bg-white/70 p-6 shadow-sm backdrop-blur transition-colors hover:border-black/20 dark:border-white/10 dark:bg-white/5 dark:hover:border-white/20"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400">
+                <Icon className="h-5 w-5" aria-hidden />
+              </div>
+              <h2 className="mt-3 font-semibold">{tool.title}</h2>
+              <p className="mt-2 text-sm text-black/60 dark:text-white/60">
+                {tool.description}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-black/80 group-hover:gap-1.5 dark:text-white/80">
+                Hesapla <span aria-hidden>→</span>
+              </span>
+            </Link>
+          );
+        })}
       </main>
 
       <div className="mt-10 flex w-full justify-center">

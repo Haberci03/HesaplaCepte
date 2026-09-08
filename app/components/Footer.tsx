@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { BookOpen, type LucideIcon } from "lucide-react";
 
-const FOOTER_LINKS = [
+const FOOTER_LINKS: { href: string; label: string; icon?: LucideIcon }[] = [
   { href: "/", label: "Ana Sayfa" },
-  { href: "/blog", label: "Blog" },
+  { href: "/blog", label: "Blog", icon: BookOpen },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/gizlilik-politikasi", label: "Gizlilik Politikası" },
   { href: "/iletisim", label: "İletişim" },
@@ -17,8 +18,9 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-black dark:hover:text-white"
+              className="flex items-center gap-1.5 hover:text-black dark:hover:text-white"
             >
+              {link.icon && <link.icon className="h-3.5 w-3.5" aria-hidden />}
               {link.label}
             </Link>
           ))}
