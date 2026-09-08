@@ -6,6 +6,7 @@ const FOOTER_LINKS: { href: string; label: string; icon?: LucideIcon }[] = [
   { href: "/blog", label: "Blog", icon: BookOpen },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/gizlilik-politikasi", label: "Gizlilik Politikası" },
+  { href: "/kullanim-sartlari", label: "Kullanım Şartları" },
   { href: "/iletisim", label: "İletişim" },
 ];
 

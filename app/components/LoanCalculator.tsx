@@ -12,7 +12,9 @@ export default function LoanCalculator() {
   const result = useMemo(() => {
     const anaPara = parseAmount(amount);
     const yillikFaizOrani = parseAmount(rate);
-    const vade = Math.max(0, Math.round(Number(term) || 0));
+    // Aşırı büyük vade değerleri (1+r)^vade'yi taşırıp NaN/Infinity üretebilir;
+    // 600 ay (50 yıl) hiçbir gerçek krediyi karşılamayacak kadar yüksek bir sınır.
+    const vade = Math.min(600, Math.max(0, Math.round(Number(term) || 0)));
     if (!anaPara || anaPara <= 0 || vade <= 0 || yillikFaizOrani < 0)
       return null;
     return calculateLoan(anaPara, yillikFaizOrani, vade);

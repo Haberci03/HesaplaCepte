@@ -13,7 +13,9 @@ export default function CompoundInterestCalculator() {
   const result = useMemo(() => {
     const anaPara = parseAmount(principal);
     const yillikFaizOrani = parseAmount(rate);
-    const vadeYil = parseAmount(term);
+    // Aşırı büyük vade değerleri (1+r)^n'i taşırıp Infinity üretebilir; 100 yıl
+    // hiçbir gerçek yatırım ufkunu karşılamayacak kadar yüksek bir sınır.
+    const vadeYil = Math.min(100, parseAmount(term));
     const aylikEkYatirim = parseAmount(monthlyContribution);
     if (!anaPara || anaPara < 0 || vadeYil <= 0 || yillikFaizOrani < 0)
       return null;
