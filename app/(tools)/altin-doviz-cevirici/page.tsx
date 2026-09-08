@@ -3,7 +3,9 @@ import CurrencyConverterCalculator from "@/app/components/CurrencyConverterCalcu
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
 import JsonLd from "@/app/components/JsonLd";
+import RelatedContent from "@/app/components/RelatedContent";
 import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
+import { getRelatedCalculatorItems } from "@/lib/relatedContent";
 import { CURRENCY_CONVERTER_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -25,6 +27,10 @@ export default function AltinDovizCeviriciPage() {
       <CurrencyConverterCalculator />
       <Disclaimer />
       <Faq items={CURRENCY_CONVERTER_FAQ_ITEMS} />
+      <RelatedContent
+        title="İlgili Hesaplayıcılar"
+        items={getRelatedCalculatorItems("/altin-doviz-cevirici")}
+      />
     </>
   );
 }

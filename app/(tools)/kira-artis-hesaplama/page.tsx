@@ -3,7 +3,9 @@ import RentIncreaseCalculator from "@/app/components/RentIncreaseCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
 import JsonLd from "@/app/components/JsonLd";
+import RelatedContent from "@/app/components/RelatedContent";
 import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
+import { getRelatedCalculatorItems } from "@/lib/relatedContent";
 import { RENT_INCREASE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -25,6 +27,10 @@ export default function KiraArtisHesaplamaPage() {
       <RentIncreaseCalculator />
       <Disclaimer />
       <Faq items={RENT_INCREASE_FAQ_ITEMS} />
+      <RelatedContent
+        title="İlgili Hesaplayıcılar"
+        items={getRelatedCalculatorItems("/kira-artis-hesaplama")}
+      />
     </>
   );
 }

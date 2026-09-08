@@ -3,7 +3,9 @@ import CompoundInterestCalculator from "@/app/components/CompoundInterestCalcula
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
 import JsonLd from "@/app/components/JsonLd";
+import RelatedContent from "@/app/components/RelatedContent";
 import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
+import { getRelatedCalculatorItems } from "@/lib/relatedContent";
 import { COMPOUND_INTEREST_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -25,6 +27,10 @@ export default function BilesikFaizHesaplamaPage() {
       <CompoundInterestCalculator />
       <Disclaimer />
       <Faq items={COMPOUND_INTEREST_FAQ_ITEMS} />
+      <RelatedContent
+        title="İlgili Hesaplayıcılar"
+        items={getRelatedCalculatorItems("/bilesik-faiz-hesaplama")}
+      />
     </>
   );
 }

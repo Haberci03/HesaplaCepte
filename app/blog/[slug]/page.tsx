@@ -6,7 +6,9 @@ import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { CALCULATOR_LABEL_BY_HREF, type CalculatorHref } from "@/lib/calculators";
 import { buildBlogPostPageSchemas } from "@/lib/jsonLd";
+import { getOtherBlogPostItems } from "@/lib/relatedContent";
 import JsonLd from "@/app/components/JsonLd";
+import RelatedContent from "@/app/components/RelatedContent";
 
 const dateFormatter = new Intl.DateTimeFormat("tr-TR", {
   day: "numeric",
@@ -85,6 +87,13 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
           </span>
         </Link>
       )}
+
+      <div className="mt-10">
+        <RelatedContent
+          title="Diğer Yazılar"
+          items={getOtherBlogPostItems(post.slug)}
+        />
+      </div>
     </article>
   );
 }
