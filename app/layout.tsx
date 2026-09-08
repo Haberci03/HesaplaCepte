@@ -29,6 +29,21 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-2480279740153872",
   },
+  // title/description kasıtlı olarak boş bırakıldı: Next.js, her sayfanın
+  // kendi title/description'ı varsa bunu otomatik olarak openGraph ve
+  // twitter alanlarına da miras bırakır. Görsel, app/opengraph-image.tsx
+  // üzerinden otomatik olarak her sayfaya eklenir.
+  // url kasıtlı olarak ayarlanmadı: mutlak bir değer atanırsa tüm sayfalar
+  // için sabitlenir. Sayfaların kendi doğru URL'si zaten alternates.canonical
+  // ile ayarlanıyor.
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    siteName: SITE_NAME,
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
