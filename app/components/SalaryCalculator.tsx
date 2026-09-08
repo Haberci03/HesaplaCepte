@@ -1,11 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import {
-  calculateFromGross,
-  MIN_GROSS_WAGE_2026,
-  type SalaryResult,
-} from "@/lib/salary";
+import { calculateFromGross, type SalaryResult } from "@/lib/salary";
+import { MIN_GROSS_WAGE_2026 } from "@/lib/constants";
 import { formatTL, parseAmount } from "@/lib/format";
 
 const AYLAR = [

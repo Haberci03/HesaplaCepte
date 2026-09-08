@@ -1,8 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { calculateSeverance, SEVERANCE_CEILING_2026 } from "@/lib/severance";
+import { calculateSeverance } from "@/lib/severance";
+import { SEVERANCE_CEILING_2026, STAMP_TAX_RATE } from "@/lib/constants";
 import { formatTL, parseAmount } from "@/lib/format";
+
+const stampRatePercentLabel = new Intl.NumberFormat("tr-TR", {
+  maximumFractionDigits: 3,
+}).format(STAMP_TAX_RATE * 100);
 
 export default function SeveranceCalculator() {
   const [amount, setAmount] = useState("33.030");
@@ -95,7 +100,7 @@ export default function SeveranceCalculator() {
               value={formatTL(result.kidemTazminatiBrut)}
             />
             <Row
-              label="Damga Vergisi (%0,759)"
+              label={`Damga Vergisi (%${stampRatePercentLabel})`}
               value={formatTL(result.damgaVergisi)}
             />
             <Row label="Net Kıdem Tazminatı" value={formatTL(result.net)} />
@@ -109,8 +114,8 @@ export default function SeveranceCalculator() {
               : `Hesaplamada kıdem tazminatı tavanı olan ${formatTL(
                   SEVERANCE_CEILING_2026
                 )} dikkate alınmıştır.`}{" "}
-            Tutardan yalnızca %0,759 damga vergisi kesilir; kıdem tazminatı
-            gelir vergisinden istisnadır.
+            Tutardan yalnızca %{stampRatePercentLabel} damga vergisi kesilir;
+            kıdem tazminatı gelir vergisinden istisnadır.
           </p>
         </div>
       )}

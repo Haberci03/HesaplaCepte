@@ -1,4 +1,5 @@
-export const VAT_RATES = [1, 10, 20] as const;
+import { VAT_RATES } from "./constants";
+
 export type VatRate = (typeof VAT_RATES)[number];
 
 export interface VatResult {

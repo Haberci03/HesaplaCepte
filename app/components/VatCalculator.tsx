@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { calculateVat, VAT_RATES, type VatRate } from "@/lib/vat";
+import { calculateVat, type VatRate } from "@/lib/vat";
+import { VAT_RATES } from "@/lib/constants";
 import { formatTL, parseAmount } from "@/lib/format";
 
 type Mode = "haric" | "dahil";

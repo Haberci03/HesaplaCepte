@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CalculatorNav from "@/app/components/CalculatorNav";
+import { LAST_UPDATED } from "@/lib/constants";
 
 export default function ToolsLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +20,10 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
           {children}
         </div>
       </main>
+
+      <p className="mt-10 text-center text-xs text-black/40 dark:text-white/40">
+        Son güncelleme: {LAST_UPDATED}
+      </p>
     </div>
   );
 }

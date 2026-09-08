@@ -1,16 +1,10 @@
-// 2026 gelir vergisi dilimleri (yıllık kümülatif matrah üzerinden)
-export const TAX_BRACKETS_2026 = [
-  { limit: 190_000, rate: 0.15 },
-  { limit: 400_000, rate: 0.2 },
-  { limit: 950_000, rate: 0.27 },
-  { limit: 3_000_000, rate: 0.35 },
-  { limit: Infinity, rate: 0.4 },
-] as const;
-
-export const SGK_RATE = 0.14;
-export const UNEMPLOYMENT_RATE = 0.01;
-export const STAMP_TAX_RATE = 0.00759;
-export const MIN_GROSS_WAGE_2026 = 33_030;
+import {
+  TAX_BRACKETS_2026,
+  SGK_RATE,
+  UNEMPLOYMENT_RATE,
+  STAMP_TAX_RATE,
+  MIN_GROSS_WAGE_2026,
+} from "./constants";
 
 const MIN_WAGE_TAX_BASE =
   MIN_GROSS_WAGE_2026 * (1 - SGK_RATE - UNEMPLOYMENT_RATE);
