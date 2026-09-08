@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import VatCalculator from "@/app/components/VatCalculator";
 import Faq from "@/app/components/Faq";
+import Disclaimer from "@/app/components/Disclaimer";
 import { VAT_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function KdvHesaplamaPage() {
   return (
     <>
       <VatCalculator />
+      <Disclaimer />
       <Faq items={VAT_FAQ_ITEMS} />
     </>
   );

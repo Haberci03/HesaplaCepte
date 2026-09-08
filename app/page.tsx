@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Disclaimer from "@/app/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: {
@@ -60,6 +61,10 @@ export default function Home() {
           </Link>
         ))}
       </main>
+
+      <div className="mt-10 flex w-full justify-center">
+        <Disclaimer />
+      </div>
     </div>
   );
 }
