@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import AnnualLeaveCalculator from "@/app/components/AnnualLeaveCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { ANNUAL_LEAVE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function YillikIzinHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/yillik-izin-hesaplama",
+          ANNUAL_LEAVE_FAQ_ITEMS
+        )}
+      />
       <AnnualLeaveCalculator />
       <Disclaimer />
       <Faq items={ANNUAL_LEAVE_FAQ_ITEMS} />

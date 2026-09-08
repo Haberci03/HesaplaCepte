@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import RentIncreaseCalculator from "@/app/components/RentIncreaseCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { RENT_INCREASE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function KiraArtisHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/kira-artis-hesaplama",
+          RENT_INCREASE_FAQ_ITEMS
+        )}
+      />
       <RentIncreaseCalculator />
       <Disclaimer />
       <Faq items={RENT_INCREASE_FAQ_ITEMS} />

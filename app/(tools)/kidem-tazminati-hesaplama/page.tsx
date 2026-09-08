@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import SeveranceCalculator from "@/app/components/SeveranceCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { SEVERANCE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function KidemTazminatiHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/kidem-tazminati-hesaplama",
+          SEVERANCE_FAQ_ITEMS
+        )}
+      />
       <SeveranceCalculator />
       <Disclaimer />
       <Faq items={SEVERANCE_FAQ_ITEMS} />

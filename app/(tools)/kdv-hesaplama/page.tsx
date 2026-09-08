@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import VatCalculator from "@/app/components/VatCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { VAT_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,9 @@ export const metadata: Metadata = {
 export default function KdvHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas("/kdv-hesaplama", VAT_FAQ_ITEMS)}
+      />
       <VatCalculator />
       <Disclaimer />
       <Faq items={VAT_FAQ_ITEMS} />

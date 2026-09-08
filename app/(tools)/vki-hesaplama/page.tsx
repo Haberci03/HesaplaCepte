@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import BmiCalculator from "@/app/components/BmiCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { BMI_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,9 @@ export const metadata: Metadata = {
 export default function VkiHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas("/vki-hesaplama", BMI_FAQ_ITEMS)}
+      />
       <BmiCalculator />
       <Disclaimer text="Bu hesaplayıcı yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Sağlığınızla ilgili değerlendirmeler için bir doktor veya diyetisyene danışmanızı öneririz." />
       <Faq items={BMI_FAQ_ITEMS} />

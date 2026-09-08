@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import LatePaymentSurchargeCalculator from "@/app/components/LatePaymentSurchargeCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { LATE_PAYMENT_SURCHARGE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function GecikmeZammiHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/gecikme-zammi-hesaplama",
+          LATE_PAYMENT_SURCHARGE_FAQ_ITEMS
+        )}
+      />
       <LatePaymentSurchargeCalculator />
       <Disclaimer />
       <Faq items={LATE_PAYMENT_SURCHARGE_FAQ_ITEMS} />

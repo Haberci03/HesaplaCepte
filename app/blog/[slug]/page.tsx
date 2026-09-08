@@ -5,6 +5,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { CALCULATOR_LABEL_BY_HREF, type CalculatorHref } from "@/lib/calculators";
+import { buildBlogPostPageSchemas } from "@/lib/jsonLd";
+import JsonLd from "@/app/components/JsonLd";
 
 const dateFormatter = new Intl.DateTimeFormat("tr-TR", {
   day: "numeric",
@@ -43,6 +45,7 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
 
   return (
     <article className="w-full max-w-2xl">
+      <JsonLd data={buildBlogPostPageSchemas(post)} />
       <Link
         href="/blog"
         className="text-sm text-black/50 hover:text-black dark:text-white/50 dark:hover:text-white"

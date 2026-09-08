@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildWebSiteSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: {
@@ -119,6 +121,7 @@ const TOOLS = [
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col items-center bg-zinc-50 px-4 py-16 dark:bg-black sm:py-24">
+      <JsonLd data={buildWebSiteSchema()} />
       <header className="mb-10 flex flex-col items-center text-center">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           HesaplaCepte

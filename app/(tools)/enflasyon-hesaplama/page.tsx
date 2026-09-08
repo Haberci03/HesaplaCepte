@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import InflationCalculator from "@/app/components/InflationCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { INFLATION_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function EnflasyonHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/enflasyon-hesaplama",
+          INFLATION_FAQ_ITEMS
+        )}
+      />
       <InflationCalculator />
       <Disclaimer />
       <Faq items={INFLATION_FAQ_ITEMS} />

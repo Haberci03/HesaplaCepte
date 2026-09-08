@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import NoticePayCalculator from "@/app/components/NoticePayCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { NOTICE_PAY_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function IhbarTazminatiHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/ihbar-tazminati-hesaplama",
+          NOTICE_PAY_FAQ_ITEMS
+        )}
+      />
       <NoticePayCalculator />
       <Disclaimer />
       <Faq items={NOTICE_PAY_FAQ_ITEMS} />

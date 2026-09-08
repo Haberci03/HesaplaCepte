@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import SalaryCalculator from "@/app/components/SalaryCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { SALARY_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,9 @@ export const metadata: Metadata = {
 export default function MaasHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas("/maas-hesaplama", SALARY_FAQ_ITEMS)}
+      />
       <SalaryCalculator />
       <Disclaimer />
       <Faq items={SALARY_FAQ_ITEMS} />

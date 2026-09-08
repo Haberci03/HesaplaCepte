@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import CreditCardMinPaymentCalculator from "@/app/components/CreditCardMinPaymentCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function KrediKartiAsgariOdemeHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/kredi-karti-asgari-odeme-hesaplama",
+          CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS
+        )}
+      />
       <CreditCardMinPaymentCalculator />
       <Disclaimer />
       <Faq items={CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS} />

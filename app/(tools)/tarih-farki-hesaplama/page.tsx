@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import DateDiffCalculator from "@/app/components/DateDiffCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { DATE_DIFF_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function TarihFarkiHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/tarih-farki-hesaplama",
+          DATE_DIFF_FAQ_ITEMS
+        )}
+      />
       <DateDiffCalculator />
       <Disclaimer />
       <Faq items={DATE_DIFF_FAQ_ITEMS} />

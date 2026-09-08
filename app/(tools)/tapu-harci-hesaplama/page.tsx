@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import TitleDeedFeeCalculator from "@/app/components/TitleDeedFeeCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { TITLE_DEED_FEE_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function TapuHarciHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/tapu-harci-hesaplama",
+          TITLE_DEED_FEE_FAQ_ITEMS
+        )}
+      />
       <TitleDeedFeeCalculator />
       <Disclaimer />
       <Faq items={TITLE_DEED_FEE_FAQ_ITEMS} />

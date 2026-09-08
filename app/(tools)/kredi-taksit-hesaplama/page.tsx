@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import LoanCalculator from "@/app/components/LoanCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { LOAN_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function KrediTaksitHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/kredi-taksit-hesaplama",
+          LOAN_FAQ_ITEMS
+        )}
+      />
       <LoanCalculator />
       <Disclaimer />
       <Faq items={LOAN_FAQ_ITEMS} />

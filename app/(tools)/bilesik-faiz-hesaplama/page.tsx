@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import CompoundInterestCalculator from "@/app/components/CompoundInterestCalculator";
 import Faq from "@/app/components/Faq";
 import Disclaimer from "@/app/components/Disclaimer";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCalculatorPageSchemas } from "@/lib/jsonLd";
 import { COMPOUND_INTEREST_FAQ_ITEMS } from "@/app/data/faq";
 
 export const metadata: Metadata = {
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function BilesikFaizHesaplamaPage() {
   return (
     <>
+      <JsonLd
+        data={buildCalculatorPageSchemas(
+          "/bilesik-faiz-hesaplama",
+          COMPOUND_INTEREST_FAQ_ITEMS
+        )}
+      />
       <CompoundInterestCalculator />
       <Disclaimer />
       <Faq items={COMPOUND_INTEREST_FAQ_ITEMS} />
