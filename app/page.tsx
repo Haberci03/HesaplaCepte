@@ -4,10 +4,10 @@ import Disclaimer from "@/app/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi ve İş Hukuku Hesaplama Araçları",
+    absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları",
   },
   description:
-    "2026 güncel oranlarıyla maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı ve yüzde hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
+    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz ve kira artışı hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
   alternates: { canonical: "/" },
 };
 
@@ -59,6 +59,30 @@ const TOOLS = [
     title: "Enflasyon Hesaplama",
     description:
       "2012-2025 yıl sonu TÜFE endekslerine göre geçmiş bir tutarın bugünkü karşılığını hesaplayın.",
+  },
+  {
+    href: "/yakit-masrafi-hesaplama",
+    title: "Yakıt Masrafı Hesaplama",
+    description:
+      "Mesafe, araç tüketimi ve yakıt fiyatına göre toplam yol masrafınızı hesaplayın.",
+  },
+  {
+    href: "/vki-hesaplama",
+    title: "VKİ (BMI) Hesaplama",
+    description:
+      "Boy ve kilonuza göre vücut kitle indeksinizi ve kategorinizi hesaplayın.",
+  },
+  {
+    href: "/bilesik-faiz-hesaplama",
+    title: "Bileşik Faiz Hesaplama",
+    description:
+      "Anapara, faiz oranı, vade ve aylık ek yatırımınıza göre vade sonu getirinizi hesaplayın.",
+  },
+  {
+    href: "/kira-artis-hesaplama",
+    title: "Kira Artış Oranı Hesaplama",
+    description:
+      "Güncel TÜFE 12 aylık ortalama oranına göre yeni kira tutarınızı hesaplayın.",
   },
 ];
 

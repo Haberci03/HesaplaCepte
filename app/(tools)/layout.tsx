@@ -10,7 +10,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
           HesaplaCepte
         </Link>
         <p className="mt-3 max-w-lg text-balance text-zinc-600 dark:text-zinc-400">
-          Güncel oranlarla ücretsiz maaş, vergi ve iş hukuku hesaplama araçları
+          Güncel oranlarla ücretsiz maaş, vergi, sağlık ve finans hesaplama araçları
         </p>
       </header>
 

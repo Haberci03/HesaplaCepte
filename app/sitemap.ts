@@ -14,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ihbar-tazminati-hesaplama", priority: 0.9 },
     { path: "/yuzde-hesaplama", priority: 0.9 },
     { path: "/enflasyon-hesaplama", priority: 0.9 },
+    { path: "/yakit-masrafi-hesaplama", priority: 0.9 },
+    { path: "/vki-hesaplama", priority: 0.9 },
+    { path: "/bilesik-faiz-hesaplama", priority: 0.9 },
+    { path: "/kira-artis-hesaplama", priority: 0.9 },
   ];
 
   return routes.map(({ path, priority }) => ({

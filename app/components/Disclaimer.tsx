@@ -1,4 +1,7 @@
-export default function Disclaimer() {
+const DEFAULT_TEXT =
+  "Bu hesaplayıcılar yalnızca bilgilendirme amaçlıdır, resmi veya hukuki tavsiye niteliği taşımaz. Kesin sonuçlar için bir mali müşavir veya muhasebeciye danışmanızı öneririz.";
+
+export default function Disclaimer({ text = DEFAULT_TEXT }: { text?: string }) {
   return (
     <div className="flex w-full max-w-2xl items-start gap-2.5 rounded-xl border border-sky-900/10 bg-sky-50/60 px-4 py-3 text-xs leading-relaxed text-sky-900/70 dark:border-sky-400/15 dark:bg-sky-400/[0.06] dark:text-sky-200/70 sm:text-sm">
       <svg
@@ -13,11 +16,7 @@ export default function Disclaimer() {
           clipRule="evenodd"
         />
       </svg>
-      <p>
-        Bu hesaplayıcılar yalnızca bilgilendirme amaçlıdır, resmi veya hukuki
-        tavsiye niteliği taşımaz. Kesin sonuçlar için bir mali müşavir veya
-        muhasebeciye danışmanızı öneririz.
-      </p>
+      <p>{text}</p>
     </div>
   );
 }

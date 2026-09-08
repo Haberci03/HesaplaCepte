@@ -196,3 +196,90 @@ export const INFLATION_FAQ_ITEMS: FaqItem[] = [
       "Toplam artış yüzdesi, seçilen iki yıl sonu arasında TÜFE endeksinin ne kadar arttığını gösterir; yani aynı satın alma gücünü korumak için tutarın yaklaşık ne kadar artması gerektiğini ifade eder.",
   },
 ];
+
+export const FUEL_COST_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Yakıt masrafı nasıl hesaplanır?",
+    answer:
+      "Toplam maliyet, mesafenin 100'e bölünüp aracın 100 km'de tükettiği yakıt miktarı ve yakıt fiyatı ile çarpılmasıyla bulunur: Toplam Maliyet = (Mesafe ÷ 100) × Tüketim × Yakıt Fiyatı.",
+  },
+  {
+    question: "Aracımın ortalama tüketimini nereden öğrenebilirim?",
+    answer:
+      "Ortalama yakıt tüketimi (100 km'de kaç litre), aracın kullanım kılavuzunda veya güncel yakıt sarfiyatınızı not ederek (depoyu doldurup belirli bir mesafe sonra tekrar doldurarak) hesaplanabilir. Şehir içi ve şehir dışı kullanımda tüketim değişebilir.",
+  },
+  {
+    question: "Km başına maliyet neye yarar?",
+    answer:
+      "Km başına maliyet, farklı araçları veya güzergahları karşılaştırmak, ya da bir yolculuğun kişi başı maliyetini paylaşmak için kullanışlı bir referans değerdir.",
+  },
+];
+
+export const BMI_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "BMI (vücut kitle indeksi) nasıl hesaplanır?",
+    answer:
+      "BMI, kilogram cinsinden vücut ağırlığının, metre cinsinden boyun karesine bölünmesiyle hesaplanır: BMI = Kilo ÷ (Boy(m))². Sonuç, kg/m² biriminde bir sayıdır.",
+  },
+  {
+    question: "BMI kategorileri nelerdir?",
+    answer:
+      "Dünya Sağlık Örgütü standardına göre: 18.5 altı zayıf, 18.5-24.9 normal, 25-29.9 fazla kilolu, 30 ve üzeri obez olarak sınıflandırılır.",
+  },
+  {
+    question: "BMI, sağlık durumumu tam olarak yansıtır mı?",
+    answer:
+      "Hayır. BMI, kas kütlesi, yağ dağılımı, cinsiyet, yaş ve vücut yapısı gibi faktörleri dikkate almayan genel bir gösterge niteliğindedir. Örneğin kas kütlesi yüksek sporcularda BMI yüksek çıkabilir ancak bu durum fazla kilolu olduğu anlamına gelmez.",
+  },
+  {
+    question: "Bu hesaplayıcı tıbbi tavsiye yerine geçer mi?",
+    answer:
+      "Hayır. Bu araç yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Sağlığınızla ilgili değerlendirmeler için bir doktor veya diyetisyene danışmanız önerilir.",
+  },
+];
+
+export const COMPOUND_INTEREST_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Bileşik faiz nedir?",
+    answer:
+      "Bileşik faiz, kazanılan faizin de anaparaya eklenerek bir sonraki dönemde tekrar faiz kazanmasıdır. Bu hesaplayıcıda aylık bileşikleme (faizin her ay anaparaya eklenmesi) varsayılmıştır.",
+  },
+  {
+    question: "Aylık ek yatırım tutarı nasıl hesaba katılır?",
+    answer:
+      "Her ay düzenli olarak yatırdığınız ek tutar, her ay sonunda yapıldığı ve o andan itibaren faiz kazanmaya başladığı varsayılarak vade sonu toplam tutara eklenir. Bu, düzenli birikim (DCA) senaryosunu yaklaşık olarak modeller.",
+  },
+  {
+    question: "Toplam kazanç neyi ifade eder?",
+    answer:
+      "Toplam kazanç, vade sonundaki toplam tutardan, yatırdığınız toplam anaparanın (ilk anapara + tüm aylık ek yatırımların toplamı) çıkarılmasıyla bulunur; yani faiz yoluyla elde ettiğiniz net kazancı gösterir.",
+  },
+  {
+    question: "Bu hesaplayıcı bir yatırım tavsiyesi midir?",
+    answer:
+      "Hayır. Bu araç yalnızca matematiksel bir bileşik faiz simülasyonudur. Gerçek yatırım araçlarının (mevduat, fon, hisse senedi vb.) getirisi piyasa koşullarına, vergilendirmeye ve işlem maliyetlerine göre değişir; yatırım kararlarınız için bir finansal danışmana başvurmanız önerilir.",
+  },
+];
+
+export const RENT_INCREASE_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Kira artış oranı nasıl hesaplanır?",
+    answer:
+      "Yeni kira, mevcut kiranın (1 + oran ÷ 100) ile çarpılmasıyla bulunur: Yeni Kira = Mevcut Kira × (1 + Oran ÷ 100). Konut kiralarında bu oran, TÜFE'nin 12 aylık ortalamalara göre değişim oranını aşamaz.",
+  },
+  {
+    question: "Varsayılan %34,88 oranı neyi ifade ediyor?",
+    answer:
+      "Bu oran, Aralık 2025 döneminde TÜİK tarafından açıklanan TÜFE 12 aylık ortalamalara göre değişim oranıdır ve konut kira artışlarında uygulanabilecek yasal üst sınırı belirler. Bu oran her ay güncellenir.",
+  },
+  {
+    question: "Bu oranı neden güncellemem gerekebilir?",
+    answer:
+      "TÜİK, TÜFE 12 aylık ortalama değişim oranını her ay yeniden açıklar. Kira artışı yapacağınız ay, hesaplayıcıdaki varsayılan orandan farklı bir oran geçerli olabilir; bu nedenle işlem yapacağınız aydaki güncel oranı TÜİK'in resmi verilerinden kontrol edip alandaki değeri güncellemeniz gerekir.",
+  },
+  {
+    question: "Bu oran her kira sözleşmesi için geçerli midir?",
+    answer:
+      "Bu sınır konut kiraları için geçerlidir; iş yeri kiraları farklı kurallara tabi olabilir. Ayrıca taraflar sözleşmede bu oranın altında bir artış üzerinde anlaşabilir. Kesin ve güncel bilgi için TÜİK verilerini ve ilgili mevzuatı kontrol etmeniz önerilir.",
+  },
+];

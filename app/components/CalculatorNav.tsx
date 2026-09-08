@@ -12,6 +12,10 @@ const TABS = [
   { href: "/ihbar-tazminati-hesaplama", label: "İhbar Tazminatı" },
   { href: "/yuzde-hesaplama", label: "Yüzde Hesaplama" },
   { href: "/enflasyon-hesaplama", label: "Enflasyon Hesaplama" },
+  { href: "/yakit-masrafi-hesaplama", label: "Yakıt Masrafı" },
+  { href: "/vki-hesaplama", label: "VKİ Hesaplama" },
+  { href: "/bilesik-faiz-hesaplama", label: "Bileşik Faiz" },
+  { href: "/kira-artis-hesaplama", label: "Kira Artışı" },
 ] as const;
 
 export default function CalculatorNav() {

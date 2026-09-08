@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME} - Ücretsiz Maaş, Vergi ve İş Hukuku Hesaplama Araçları`,
+    default: `${SITE_NAME} - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları`,
   },
   description:
-    "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı ve yüzde hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
+    "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz ve kira artışı hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
   verification: {
     google: "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
   },

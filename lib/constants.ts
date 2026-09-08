@@ -80,3 +80,16 @@ export const TUFE_YEAR_END_INDEX: Record<number, number> = {
   2024: 1259.1,
   2025: 1647.9,
 };
+
+// Vücut kitle indeksi (BMI) kategorileri (Dünya Sağlık Örgütü standardı)
+// Dönem: uluslararası standart, dönemsel güncelleme yok
+export const BMI_CATEGORIES = [
+  { max: 18.5, label: "Zayıf" }, // 18.5 altı
+  { max: 25, label: "Normal" }, // 18.5 - 24.9
+  { max: 30, label: "Fazla Kilolu" }, // 25 - 29.9
+  { max: Infinity, label: "Obez" }, // 30 ve üzeri
+] as const;
+
+// Kira artışında uygulanabilecek TÜFE 12 aylık ortalama değişim oranı (%)
+// Dönem: Aralık 2025 TÜİK verisi - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
+export const RENT_INCREASE_TUFE_RATE_DEFAULT = 34.88;
