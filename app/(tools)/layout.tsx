@@ -9,8 +9,8 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
         <Link href="/" className="text-3xl font-bold tracking-tight sm:text-4xl">
           HesaplaCepte
         </Link>
-        <p className="mt-3 max-w-md text-balance text-zinc-600 dark:text-zinc-400">
-          Güncel oranlarla maaş, KDV ve kıdem tazminatı hesaplayıcı
+        <p className="mt-3 max-w-lg text-balance text-zinc-600 dark:text-zinc-400">
+          Güncel oranlarla ücretsiz maaş, vergi ve iş hukuku hesaplama araçları
         </p>
       </header>
 

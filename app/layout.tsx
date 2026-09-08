@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME} - Maaş, KDV ve Kıdem Tazminatı Hesaplama`,
+    default: `${SITE_NAME} - Ücretsiz Maaş, Vergi ve İş Hukuku Hesaplama Araçları`,
   },
   description:
-    "2026 gelir vergisi dilimlerine göre maaş net-brüt hesaplayıcı, %1/%10/%20 oranlarıyla KDV dahil-hariç hesaplayıcı ve kıdem tazminatı hesaplayıcı.",
+    "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı ve yüzde hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
   verification: {
     google: "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
   },

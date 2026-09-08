@@ -38,3 +38,25 @@ export const SEVERANCE_CEILING_2026 = 73_729.87;
 // KDV oranları
 // Dönem: 2026 tam yılı, 01.01.2026 - 31.12.2026
 export const VAT_RATES = [1, 10, 20] as const;
+
+// Yıllık ücretli izin süreleri (4857 sayılı İş Kanunu, Madde 53)
+// Dönem: yasa maddesi, yıllık dönemsel güncelleme yok
+// Not: 2. dilimin üst sınırı (15 yıl) haric, 3. dilim 15 yıldan itibaren (15 dahil) başlar.
+export const ANNUAL_LEAVE_TIER_1_MAX_YEARS = 5; // 1 - 5 yıl (5 dahil)
+export const ANNUAL_LEAVE_TIER_1_DAYS = 14;
+export const ANNUAL_LEAVE_TIER_2_MAX_YEARS = 15; // 5 yıldan fazla, 15 yıldan az (15 hariç)
+export const ANNUAL_LEAVE_TIER_2_DAYS = 20;
+export const ANNUAL_LEAVE_TIER_3_DAYS = 26; // 15 yıl (dahil) ve üzeri
+
+// 18 yaşından küçük ve 50 yaşından büyük çalışanlar için asgari yıllık izin (İş Kanunu Madde 53)
+// Dönem: yasa maddesi, yıllık dönemsel güncelleme yok
+export const ANNUAL_LEAVE_MIN_DAYS_SPECIAL_AGE = 20;
+
+// İhbar süreleri (4857 sayılı İş Kanunu, Madde 17)
+// Dönem: yasa maddesi, yıllık dönemsel güncelleme yok
+export const NOTICE_PERIOD_TIERS = [
+  { maxYears: 0.5, weeks: 2 }, // 6 aya kadar
+  { maxYears: 1.5, weeks: 4 }, // 6 ay - 1,5 yıl arası
+  { maxYears: 3, weeks: 6 }, // 1,5 - 3 yıl arası
+  { maxYears: Infinity, weeks: 8 }, // 3 yıldan fazla
+] as const;

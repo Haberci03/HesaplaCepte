@@ -4,10 +4,10 @@ import Disclaimer from "@/app/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HesaplaCepte - Maaş, KDV ve Kıdem Tazminatı Hesaplama Araçları",
+    absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi ve İş Hukuku Hesaplama Araçları",
   },
   description:
-    "2026 güncel oranlarıyla ücretsiz maaş net-brüt hesaplama, KDV dahil/hariç hesaplama ve kıdem tazminatı hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
+    "2026 güncel oranlarıyla maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı ve yüzde hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
   alternates: { canonical: "/" },
 };
 
@@ -30,6 +30,30 @@ const TOOLS = [
     description:
       "Brüt maaşınız ve çalışma sürenize göre net kıdem tazminatınızı hesaplayın.",
   },
+  {
+    href: "/kredi-taksit-hesaplama",
+    title: "Kredi Taksit Hesaplama",
+    description:
+      "Anapara, faiz oranı ve vadeye göre aylık taksitinizi ve toplam faiz maliyetinizi hesaplayın.",
+  },
+  {
+    href: "/yillik-izin-hesaplama",
+    title: "Yıllık İzin Hesaplama",
+    description:
+      "İş Kanunu Madde 53'e göre çalışma sürenize göre yıllık ücretli izin hakkınızı hesaplayın.",
+  },
+  {
+    href: "/ihbar-tazminati-hesaplama",
+    title: "İhbar Tazminatı Hesaplama",
+    description:
+      "Brüt maaşınız ve çalışma sürenize göre ihbar süresi ve ihbar tazminatınızı hesaplayın.",
+  },
+  {
+    href: "/yuzde-hesaplama",
+    title: "Yüzde Hesaplama",
+    description:
+      "Bir sayının yüzdesini, yüzde oranını veya zam/indirim yüzdesini kolayca hesaplayın.",
+  },
 ];
 
 export default function Home() {
@@ -39,12 +63,12 @@ export default function Home() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           HesaplaCepte
         </h1>
-        <p className="mt-3 max-w-md text-balance text-zinc-600 dark:text-zinc-400">
-          Güncel oranlarla maaş, KDV ve kıdem tazminatı hesaplayıcı
+        <p className="mt-3 max-w-lg text-balance text-zinc-600 dark:text-zinc-400">
+          Güncel oranlarla ücretsiz maaş, vergi ve iş hukuku hesaplama araçları
         </p>
       </header>
 
-      <main className="grid w-full max-w-4xl gap-5 sm:grid-cols-3">
+      <main className="grid w-full max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {TOOLS.map((tool) => (
           <Link
             key={tool.href}

@@ -9,6 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/maas-hesaplama", priority: 0.9 },
     { path: "/kdv-hesaplama", priority: 0.9 },
     { path: "/kidem-tazminati-hesaplama", priority: 0.9 },
+    { path: "/kredi-taksit-hesaplama", priority: 0.9 },
+    { path: "/yillik-izin-hesaplama", priority: 0.9 },
+    { path: "/ihbar-tazminati-hesaplama", priority: 0.9 },
+    { path: "/yuzde-hesaplama", priority: 0.9 },
   ];
 
   return routes.map(({ path, priority }) => ({
