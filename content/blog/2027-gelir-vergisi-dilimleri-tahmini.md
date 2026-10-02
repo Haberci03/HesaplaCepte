@@ -1,7 +1,7 @@
 ---
 title: "2027 Gelir Vergisi Dilimleri Ne Kadar Olacak? (Tahminler)"
 description: "2027 yılı gelir vergisi dilimlerine ilişkin beklentiler, Yeniden Değerleme Oranı'nın etkisi ve rakamların ne zaman kesinleşeceği hakkında güncel bilgiler."
-date: "2026-09-29"
+date: "2026-10-02"
 slug: "2027-gelir-vergisi-dilimleri-tahmini"
 relatedCalculator: "/maas-hesaplama"
 ---
