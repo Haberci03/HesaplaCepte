@@ -24,7 +24,12 @@ export const metadata: Metadata = {
   description:
     "Maaş net-brüt, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı ve kredi kartı asgari ödeme hesaplama araçları. Güncel oranlarla ücretsiz ve hızlı hesaplama.",
   verification: {
-    google: "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
+    // Birden fazla Search Console mülkü doğrulandığı için dizi kullanılıyor;
+    // Next.js her değer için ayrı bir google-site-verification etiketi basar.
+    google: [
+      "4AdzpLnYBCczTzFa8yazrWncjuwz--eFSrYvoH2XPtM",
+      "sDW-aZBwGjvvC2jSKsaD3DtKHwhGs89Xep1JdGwIQ1M",
+    ],
   },
   other: {
     "google-adsense-account": "ca-pub-2480279740153872",
