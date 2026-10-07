@@ -28,7 +28,7 @@ export const UNEMPLOYMENT_RATE = 0.01;
 export const STAMP_TAX_RATE = 0.00759;
 
 // Brüt asgari ücret
-// Dönem: 2026 1. dönem, 01.01.2026 - 30.06.2026 (yıl içinde güncellenirse bu değeri değiştirin)
+// Dönem: 2026 tüm yıl geçerli (Temmuz'da ara zam yapılmadı), 01.01.2026 - 31.12.2026
 export const MIN_GROSS_WAGE_2026 = 33_030;
 
 // Kıdem tazminatı tavanı (brüt)
