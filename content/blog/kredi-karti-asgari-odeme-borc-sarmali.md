@@ -32,6 +32,24 @@ Kredi kartı faiz oranları, diğer kredi türlerine göre genellikle daha yüks
 - **Birden fazla ay üst üste asgari ödeme yapıyorsanız, bunu bir uyarı sinyali olarak görün** ve harcama alışkanlıklarınızı gözden geçirin.
 - **Yüksek faizli kart borcunu, daha düşük faizli bir ihtiyaç kredisiyle kapatmayı (borç yapılandırma) değerlendirin** — bazı durumlarda toplam maliyeti azaltabilir.
 
+## Sık Sorulan Sorular
+
+### Kredi kartı asgari ödeme yapılırsa ne olur?
+
+Dönem borcunuzun yalnızca bir kısmını ödemiş olursunuz; kalan bakiye bir sonraki döneme faizle birlikte devreder. Borcunuz kapanmış olmaz, yalnızca o dönem için temerrüde düşmemiş olursunuz. Kartınız açık kalmaya devam eder, ancak toplam borcunuz büyümeye başlar.
+
+### Asgari ödemeyi ödeyince borçtan düşer mi?
+
+Ödediğiniz tutar borcunuzdan düşer, ancak ödemenin bir kısmı işleyen faize gittiği için anapara beklediğinizden çok daha yavaş azalır. Kalan bakiye üzerinden faiz işlemeye devam eder. Bu nedenle üst üste asgari ödeme yapıldığında borç neredeyse yerinde sayar.
+
+### Kredi kartı asgari borcu ödenmezse ne olur?
+
+Ödenmeyen tutara gecikme faizi uygulanır ve kart kullanımınız bankanız tarafından kısıtlanabilir. Gecikme kredi notunuzu da olumsuz etkiler. Ödememe durumu uzun sürerse banka borcu yasal takibe taşıyabilir.
+
+### Asgari ödeme tutarı nasıl hesaplanır?
+
+Asgari ödeme, kart limitinize bağlı olarak dönem borcunuzun belirli bir yüzdesi olarak hesaplanır. Bu oranlar BDDK düzenlemeleriyle belirlenir ve zaman içinde değişebilir. Güncel oranlara göre kendi tutarınızı görmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.
+
 ## Kendi Durumunuzu Hesaplayın
 
 Kart limitinize ve dönem borcunuza göre asgari ödeme tutarınızı ve bu tutarın toplam borcunuza etkisini görmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.
