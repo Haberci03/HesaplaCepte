@@ -29,6 +29,12 @@ Yıl başında düşük dilimde başlarsınız, ancak aylar geçtikçe kümülat
 
 Aralık ayında genelde en yüksek dilimde olursunuz, çünkü kümülatif matrahınız en üst seviyeye ulaşmıştır. Yeni yıl (Ocak) geldiğinde matrah sıfırlanır ve süreç yeniden en düşük dilimden başlar — bu yüzden Ocak ayı net maaşları genelde Aralık'a göre daha yüksek görünür.
 
+## Sık Sorulan Sorular
+
+### Maaştan gelir vergisi kaç ay kesilir?
+
+Gelir vergisi yıl boyunca her ay maaşınızdan kesilir. Uygulanan oran, kümülatif matrahınız arttıkça yıl içinde değişebilir. Maaşınızın asgari ücrete denk gelen kısmı ise gelir vergisinden istisnadır.
+
 ## Kendi Durumunuzu Görün
 
 Brüt maaşınızı girerek, yıl boyunca hangi aylarda dilim değiştireceğinizi ve net maaşınızın nasıl seyredeceğini görmek için maaş hesaplayıcımızı kullanabilirsiniz — 12 ayın tamamını tek seferde gösterir.

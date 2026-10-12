@@ -50,6 +50,16 @@ Dönem borcunuzun yalnızca bir kısmını ödemiş olursunuz; kalan bakiye bir 
 
 Asgari ödeme, kart limitinize bağlı olarak dönem borcunuzun belirli bir yüzdesi olarak hesaplanır. Bu oranlar BDDK düzenlemeleriyle belirlenir ve zaman içinde değişebilir. Güncel oranlara göre kendi tutarınızı görmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.
 
+### Sürekli sadece asgari ödeme yaparsam ne olur?
+
+Her dönem ödenmeyen bakiye faiziyle birlikte bir sonraki döneme devreder. Ödemenizin bir kısmı faize gittiği için anapara çok yavaş azalır ve borç uzun süre kapanmaz. Yeni harcamalar da eklendikçe borç sarmalına girme riskiniz artar.
+
+### Kredi kartı asgari ödeme nedir?
+
+Asgari ödeme, dönem borcunuzun kart limitinize göre belirlenen ve son ödeme tarihine kadar ödenmesi gereken en düşük kısmıdır. Kendi kartınız için asgari tutarı görmek isterseniz kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.
+
+Asgari tutar hiç ödenmezse neler olacağını merak ediyorsanız [Kredi Kartı Asgari Ödeme Ödenmezse Ne Olur?](/blog/kredi-karti-asgari-odeme-odenmezse-ne-olur) yazımızı okuyabilirsiniz.
+
 ## Kendi Durumunuzu Hesaplayın
 
 Kart limitinize ve dönem borcunuza göre asgari ödeme tutarınızı ve bu tutarın toplam borcunuza etkisini görmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.

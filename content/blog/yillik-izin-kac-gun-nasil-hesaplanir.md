@@ -58,6 +58,18 @@ Deneme süresi dahil en az bir yıl çalışmış olmak gerekir.
 
 İş sözleşmeniz sona erdiğinde, kullanılmamış izin günleriniz için son ücret üzerinden ödeme yapılır.
 
+### 1 yıl çalışan kaç gün yıllık izin alır?
+
+Deneme süresi dahil 1 yılını dolduran çalışan 14 gün yıllık izne hak kazanır. 1 yıldan 5 yıla kadar (5 yıl dahil) kıdemi olan çalışanlar için süre 14 gündür. 18 yaş altı ve 50 yaş üstü çalışanlarda bu süre 20 günden az olamaz.
+
+### 20 yıl çalışan kaç gün yıllık izin alır?
+
+15 yıl ve üzeri kıdemi olan çalışanlar yılda en az 26 gün yıllık izin kullanır. Bu nedenle 20 yıl çalışmış biri 26 gün izne hak kazanır. İş veya toplu iş sözleşmesiyle daha uzun bir süre belirlenmiş olabilir.
+
+### Kıdem tazminatı ile yıllık izin birlikte hesaplanır mı?
+
+Hayır, kıdem tazminatı ve kullanılmayan yıllık izin ücreti birbirinden ayrı haklardır ve ayrı ayrı hesaplanır. İşten ayrılırken şartları sağlıyorsanız ikisini birlikte alabilirsiniz. Kıdem tazminatınızı öğrenmek için [kıdem tazminatı hesaplayıcımızı](/kidem-tazminati-hesaplama) kullanabilirsiniz.
+
 ## Kendi İzin Sürenizi Hesaplayın
 
 İşe başlama tarihinizi veya çalışma yılınızı girerek kaç gün yıllık izin hakkınız olduğunu hemen öğrenmek için yıllık izin hesaplayıcımızı kullanabilirsiniz.

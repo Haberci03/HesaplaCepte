@@ -32,6 +32,12 @@ Bu iki tazminat birbirinden farklıdır ve bazı durumlarda birlikte, bazı duru
 
 Bir çalışan hem ihbar hem kıdem tazminatına aynı anda hak kazanabilir.
 
+## Sık Sorulan Sorular
+
+### İş yerinden çıkış parası nasıl alınır?
+
+Halk arasında "çıkış parası" denen ödeme genellikle kıdem ve ihbar tazminatıdır. Şartları sağlıyorsanız bu ödemeleri işvereninizin yapması gerekir. Ödeme yapılmazsa yasal yollara başvurmak için bir avukata danışmanız doğru olur.
+
 ## Ne Kadar Tazminat Alırsınız?
 
 İhbar tazminatı tutarınızı öğrenmek için ihbar tazminatı hesaplayıcımızı kullanabilirsiniz.

@@ -48,3 +48,7 @@ Brüt ücretten %14 SGK ve %1 işsizlik primi çıkarılır. 33.030 TL brüt üc
 ### Asgari ücret yıl içinde değişir mi?
 
 Asgari ücret genellikle yılda bir kez, Ocak ayında güncellenir. Yıl içinde ek bir düzenleme yapılması mümkündür ancak bu her yıl olan bir durum değildir.
+
+### Asgari ücret günlük ne kadar?
+
+2026 yılında brüt asgari ücret 33.030 TL'dir. Bu tutar 30 güne bölündüğünde günlük brüt asgari ücret 1.101 TL olur.
