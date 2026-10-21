@@ -17,7 +17,13 @@ export default function CompoundInterestCalculator() {
     // hiçbir gerçek yatırım ufkunu karşılamayacak kadar yüksek bir sınır.
     const vadeYil = Math.min(100, parseAmount(term));
     const aylikEkYatirim = parseAmount(monthlyContribution);
-    if (!anaPara || anaPara < 0 || vadeYil <= 0 || yillikFaizOrani < 0)
+    if (
+      !anaPara ||
+      anaPara < 0 ||
+      vadeYil <= 0 ||
+      yillikFaizOrani < 0 ||
+      aylikEkYatirim < 0
+    )
       return null;
     if (anaPara === 0 && aylikEkYatirim === 0) return null;
     return calculateCompoundInterest(anaPara, yillikFaizOrani, vadeYil, aylikEkYatirim);

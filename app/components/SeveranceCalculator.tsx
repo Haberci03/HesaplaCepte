@@ -16,9 +16,10 @@ export default function SeveranceCalculator() {
 
   const result = useMemo(() => {
     const brut = parseAmount(amount);
-    const yilSayisi = Math.max(0, Number(yil) || 0);
-    const aySayisi = Math.max(0, Math.min(11, Number(ay) || 0));
-    if (!brut || brut <= 0 || yilSayisi + aySayisi <= 0) return null;
+    const yilSayisi = Number(yil) || 0;
+    const aySayisi = Math.min(11, Number(ay) || 0);
+    if (!brut || brut <= 0 || yilSayisi < 0 || aySayisi < 0) return null;
+    if (yilSayisi + aySayisi <= 0) return null;
     return calculateSeverance(brut, yilSayisi, aySayisi);
   }, [amount, yil, ay]);
 

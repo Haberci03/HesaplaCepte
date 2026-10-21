@@ -114,7 +114,9 @@ export default function PercentageCalculator() {
             >
               {mode === "of"
                 ? numberFormatter.format(result.result)
-                : `%${numberFormatter.format(Math.abs(result.result))}`}
+                : `%${numberFormatter.format(
+                    isChange ? Math.abs(result.result) : result.result
+                  )}`}
             </p>
           </div>
 

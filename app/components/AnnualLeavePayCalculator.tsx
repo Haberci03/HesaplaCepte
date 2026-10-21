@@ -16,7 +16,7 @@ export default function AnnualLeavePayCalculator() {
     const brut = parseAmount(amount);
     const izinGunu = Math.min(
       ANNUAL_LEAVE_PAY_MAX_DAYS,
-      Math.max(0, Math.round(Number(gun) || 0))
+      Math.round(Number(gun) || 0)
     );
     if (!brut || brut <= 0 || izinGunu <= 0) return null;
     return calculateAnnualLeavePay(brut, izinGunu);

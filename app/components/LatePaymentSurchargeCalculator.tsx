@@ -31,8 +31,9 @@ export default function LatePaymentSurchargeCalculator() {
       aySayisi = diff.years * 12 + diff.months;
       gunSayisi = diff.days;
     } else {
-      aySayisi = Math.max(0, Number(months) || 0);
-      gunSayisi = Math.max(0, Number(days) || 0);
+      aySayisi = Number(months) || 0;
+      gunSayisi = Number(days) || 0;
+      if (aySayisi < 0 || gunSayisi < 0) return null;
     }
 
     if (aySayisi <= 0 && gunSayisi <= 0) return null;

@@ -10,9 +10,11 @@ export function formatTL(value: number): string {
 // tutarı sayıya çevirir. Virgül her zaman ondalık ayraç olarak kabul edilir.
 // Virgül yoksa, son "."ten sonra tam olarak 1-2 hane varsa bu nokta ondalık
 // ayraç sayılır (ör. "3.5" -> 3.5); 3 hane varsa binlik ayraç sayılır
-// (ör. "33.030" -> 33030).
+// (ör. "33.030" -> 33030). Baştaki eksi işareti korunur (ör. "-5" -> -5);
+// negatif değerin geçerli olup olmadığına hesaplayıcının kendisi karar verir.
 export function parseAmount(raw: string): number {
   let normalized = raw.trim();
+  const isNegative = /^[-−]/.test(normalized);
 
   if (normalized.includes(",")) {
     normalized = normalized.replace(/\./g, "").replace(",", ".");
@@ -32,5 +34,6 @@ export function parseAmount(raw: string): number {
 
   normalized = normalized.replace(/[^0-9.]/g, "");
   const value = parseFloat(normalized);
-  return Number.isFinite(value) ? value : 0;
+  if (!Number.isFinite(value)) return 0;
+  return isNegative ? -value : value;
 }

@@ -11,9 +11,9 @@ export default function NoticePayCalculator() {
 
   const result = useMemo(() => {
     const brut = parseAmount(amount);
-    const yilSayisi = Math.max(0, Number(yil) || 0);
-    const aySayisi = Math.max(0, Math.min(11, Number(ay) || 0));
-    if (!brut || brut <= 0) return null;
+    const yilSayisi = Number(yil) || 0;
+    const aySayisi = Math.min(11, Number(ay) || 0);
+    if (!brut || brut <= 0 || yilSayisi < 0 || aySayisi < 0) return null;
     return calculateNoticePay(brut, yilSayisi + aySayisi / 12);
   }, [amount, yil, ay]);
 
