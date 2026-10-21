@@ -3,15 +3,15 @@
 // Bir değer güncellendiğinde ilgili yorum satırındaki dönemi ve LAST_UPDATED'ı da güncelleyin.
 
 // Bu sabitlerin en son kontrol edildiği/güncellendiği tarih.
-export const LAST_UPDATED = "8 Eylül 2026";
+export const LAST_UPDATED = "21 Ekim 2026";
 
-// Gelir vergisi dilimleri (yıllık kümülatif matrah üzerinden)
+// Gelir vergisi dilimleri, ücret gelirleri tarifesi (yıllık kümülatif matrah üzerinden)
 // Dönem: 2026 tam yılı, 01.01.2026 - 31.12.2026
 export const TAX_BRACKETS_2026 = [
   { limit: 190_000, rate: 0.15 },
   { limit: 400_000, rate: 0.2 },
-  { limit: 950_000, rate: 0.27 },
-  { limit: 3_000_000, rate: 0.35 },
+  { limit: 1_500_000, rate: 0.27 },
+  { limit: 5_300_000, rate: 0.35 },
   { limit: Infinity, rate: 0.4 },
 ] as const;
 
@@ -91,15 +91,15 @@ export const BMI_CATEGORIES = [
 ] as const;
 
 // Kira artışında uygulanabilecek TÜFE 12 aylık ortalama değişim oranı (%)
-// Dönem: Aralık 2025 TÜİK verisi - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
-export const RENT_INCREASE_TUFE_RATE_DEFAULT = 34.88;
+// Dönem: Eylül 2026 TÜİK verisi, Ekim 2026'da yenilenen sözleşmeler için üst sınır - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
+export const RENT_INCREASE_TUFE_RATE_DEFAULT = 31.49;
 
 // Kredi kartı asgari ödeme tutarı için limit eşiği ve oranları
-// Kaynak: BDDK'nın 26.09.2024 tarihli 10970 sayılı kararı
-// Dönem: 2024'ten itibaren yürürlükte, 2026'da hâlâ geçerli
-export const MINIMUM_PAYMENT_LIMIT_THRESHOLD = 50_000; // TL
-export const MINIMUM_PAYMENT_RATE_LOW = 0.2; // Limit 50.000 TL ve altı
-export const MINIMUM_PAYMENT_RATE_HIGH = 0.4; // Limit 50.000 TL üzeri
+// Kaynak: 1 Ekim 2026 tarihli BDDK kararı (limit eşiği 50.000 TL'den 100.000 TL'ye çıkarıldı, oranlar değişmedi)
+// Dönem: 01.10.2026 tarihinden itibaren geçerli
+export const MINIMUM_PAYMENT_LIMIT_THRESHOLD = 100_000; // TL
+export const MINIMUM_PAYMENT_RATE_LOW = 0.2; // Limit 100.000 TL ve altı (100.000 dahil)
+export const MINIMUM_PAYMENT_RATE_HIGH = 0.4; // Limit 100.000 TL üzeri
 
 // Tapu harcı oranı (satış bedeli üzerinden, alıcı ve satıcı payı ayrı ayrı)
 // Kaynak: 492 sayılı Harçlar Kanunu'na bağlı 4 sayılı tarife
@@ -107,9 +107,13 @@ export const MINIMUM_PAYMENT_RATE_HIGH = 0.4; // Limit 50.000 TL üzeri
 export const TITLE_DEED_FEE_RATE_BUYER = 0.02; // Alıcı payı
 export const TITLE_DEED_FEE_RATE_SELLER = 0.02; // Satıcı payı
 
-// Tapu döner sermaye bedeli (yaklaşık; bölgeye göre değişebilir)
-// Dönem: 2026 yılı yaklaşık ortalama - kesin tutar için Tapu Sicil Müdürlüğü'ne bakılmalı
-export const TITLE_DEED_REVOLVING_FUND_FEE_APPROX = 2_500;
+// Tapu döner sermaye bedeli
+// Kaynak: TKGM 2026 gösterge tutarı; işlem yapılan tapu müdürlüğünün yöresel katsayısıyla çarpılır
+// Dönem: 2026 yılı - müdürlüğe göre yaklaşık 2.200 - 6.700 TL arasında değişir, büyük şehirlerde üst uca yakındır.
+// Kesin tutar için işlemin yapılacağı tapu müdürlüğüne bakılmalı.
+export const TITLE_DEED_REVOLVING_FUND_BASE_FEE_2026 = 2_227; // TL, yöresel katsayı uygulanmadan önce
+export const TITLE_DEED_REVOLVING_FUND_FEE_MIN = 2_200; // TL, tahmini alt uç
+export const TITLE_DEED_REVOLVING_FUND_FEE_MAX = 6_700; // TL, tahmini üst uç
 
 // Gecikme zammı aylık oranı (tam aylar için; ay kesirleri/artık günler için günlük oran = aylık oran / 30)
 // Kaynak: 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun, Cumhurbaşkanı kararı

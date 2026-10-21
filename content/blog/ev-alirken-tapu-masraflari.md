@@ -20,7 +20,7 @@ Tapu harcı, tapuda beyan edilen satış bedeli üzerinden hesaplanır. Ancak bu
 
 ## Döner Sermaye Bedeli
 
-Tapu harcına ek olarak, işlem sırasında bir de döner sermaye hizmet bedeli ödenir. Bu tutar sabit bir rakam olmakla birlikte, bulunduğunuz bölgeye (büyükşehir katsayısına) göre değişebilir, genellikle birkaç bin TL civarındadır.
+Tapu harcına ek olarak, işlem sırasında bir de döner sermaye hizmet bedeli ödenir. Bu bedel, Tapu ve Kadastro Genel Müdürlüğü'nün (TKGM) 2026 için belirlediği 2.227 TL'lik gösterge tutarın, işlemin yapıldığı tapu müdürlüğünün yöresel katsayısıyla çarpılmasıyla bulunur. Bu yüzden müdürlüğe göre yaklaşık 2.200 TL ile 6.700 TL arasında değişir; büyük şehirlerde üst uca yakındır. Kesin tutarı işlemi yapacağınız tapu müdürlüğünden öğrenebilirsiniz.
 
 ## Örnek Hesaplama
 

@@ -81,10 +81,12 @@ export default function RentIncreaseCalculator() {
           </dl>
 
           <p className="text-xs leading-relaxed text-amber-700 dark:text-amber-400">
-            Bu oran, konut kira sözleşmelerinde uygulanabilecek yasal üst
-            sınırdır (TÜFE 12 aylık ortalamalara göre değişim oranı). TÜİK bu
-            oranı her ay günceller; kira artışı yapacağınız aydaki güncel
-            oranı TÜİK&apos;in resmi verilerinden kontrol etmeniz önerilir.
+            Varsayılan %31,49 oranı, Ekim 2026 yenilemeleri için geçerli olan
+            yasal üst sınırdır (Eylül 2026 itibarıyla TÜFE 12 aylık
+            ortalamalara göre değişim oranı). Bu oran her ay TÜİK&apos;in
+            açıkladığı yeni orana göre değişir; sözleşmeniz başka bir ayda
+            yenileniyorsa o ay için geçerli oranı TÜİK&apos;in resmi
+            verilerinden kontrol edip yukarıdaki alana girin.
           </p>
         </div>
       )}

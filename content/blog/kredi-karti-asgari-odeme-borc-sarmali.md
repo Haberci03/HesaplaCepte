@@ -12,7 +12,7 @@ Kredi kartı ekstrenizde "asgari ödeme tutarı" seçeneğini görmek rahatlatı
 
 ## Asgari Ödeme Aslında Ne Anlama Gelir?
 
-Kredi kartı limitinize göre (BDDK düzenlemesine göre 50.000 TL altı ve üstü için farklı oranlar uygulanır), dönem borcunuzun sadece bir kısmını (%20 veya %40) ödemeniz istenir. Geri kalan bakiye, bir sonraki döneme **kredi kartı faiziyle birlikte** devreder.
+Kredi kartı limitinize göre (1 Ekim 2026 tarihli BDDK kararına göre limiti 100.000 TL ve altı olan kartlarda %20, 100.000 TL üzerindeki kartlarda %40 oranı uygulanır), dönem borcunuzun sadece bir kısmını (%20 veya %40) ödemeniz istenir. Geri kalan bakiye, bir sonraki döneme **kredi kartı faiziyle birlikte** devreder.
 
 ## Borç Sarmalı Nasıl Oluşur?
 

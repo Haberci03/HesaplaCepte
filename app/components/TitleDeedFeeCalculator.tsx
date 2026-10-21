@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { calculateTitleDeedFee } from "@/lib/titleDeedFee";
 import { formatTL, parseAmount } from "@/lib/format";
+import { TITLE_DEED_REVOLVING_FUND_BASE_FEE_2026 } from "@/lib/constants";
 
 export default function TitleDeedFeeCalculator() {
   const [amount, setAmount] = useState("2.000.000");
@@ -54,16 +55,22 @@ export default function TitleDeedFeeCalculator() {
             />
             <Row label="Toplam Harç (%4)" value={formatTL(result.toplamHarc)} />
             <Row
-              label="Döner Sermaye (yaklaşık)"
-              value={formatTL(result.donerSermayeYaklasik)}
+              label="Döner Sermaye (tahmini)"
+              value={`${formatTL(result.donerSermayeMin)} - ${formatTL(
+                result.donerSermayeMax
+              )}`}
             />
           </dl>
 
           <p className="text-xs leading-relaxed text-black/50 dark:text-white/50">
-            Döner sermaye bedeli bölgeye ve işlem türüne göre değişir; burada
-            yaklaşık {formatTL(result.donerSermayeYaklasik)} olarak
-            gösterilmiştir. Kesin tutar için işlemi yapacağınız Tapu Sicil
-            Müdürlüğü&apos;ne danışmanız önerilir.
+            Döner sermaye bedeli, TKGM&apos;nin 2026 gösterge tutarı olan{" "}
+            {formatTL(TITLE_DEED_REVOLVING_FUND_BASE_FEE_2026)} ile işlemin
+            yapıldığı tapu müdürlüğünün yöresel katsayısı çarpılarak bulunur. Bu nedenle müdürlüğe göre yaklaşık{" "}
+            {formatTL(result.donerSermayeMin)} ile{" "}
+            {formatTL(result.donerSermayeMax)} arasında değişir; büyük
+            şehirlerde üst uca yakındır. Döner sermaye toplam harca dahil
+            edilmemiştir. Kesin tutar için işlemi yapacağınız tapu
+            müdürlüğüne danışmanız önerilir.
           </p>
 
           <div className="rounded-xl bg-amber-500/10 p-4 text-xs leading-relaxed text-amber-700 dark:text-amber-400 sm:text-sm">

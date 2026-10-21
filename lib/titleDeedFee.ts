@@ -1,7 +1,8 @@
 import {
   TITLE_DEED_FEE_RATE_BUYER,
   TITLE_DEED_FEE_RATE_SELLER,
-  TITLE_DEED_REVOLVING_FUND_FEE_APPROX,
+  TITLE_DEED_REVOLVING_FUND_FEE_MIN,
+  TITLE_DEED_REVOLVING_FUND_FEE_MAX,
 } from "./constants";
 
 export interface TitleDeedFeeResult {
@@ -9,7 +10,8 @@ export interface TitleDeedFeeResult {
   aliciHarci: number;
   saticiHarci: number;
   toplamHarc: number;
-  donerSermayeYaklasik: number;
+  donerSermayeMin: number;
+  donerSermayeMax: number;
 }
 
 export function calculateTitleDeedFee(satisBedeli: number): TitleDeedFeeResult {
@@ -22,6 +24,7 @@ export function calculateTitleDeedFee(satisBedeli: number): TitleDeedFeeResult {
     aliciHarci,
     saticiHarci,
     toplamHarc,
-    donerSermayeYaklasik: TITLE_DEED_REVOLVING_FUND_FEE_APPROX,
+    donerSermayeMin: TITLE_DEED_REVOLVING_FUND_FEE_MIN,
+    donerSermayeMax: TITLE_DEED_REVOLVING_FUND_FEE_MAX,
   };
 }

@@ -28,11 +28,11 @@ export default function KrediKartiAsgariOdemeHesaplamaPage() {
       <AboutSection>
         Kredi kartı dönem borcunuzun tamamını ödeyemediğinizde, kart
         borcunuzu temerrüde düşürmeden ödeyebileceğiniz en düşük tutar
-        asgari ödeme tutarıdır. Bu hesaplayıcı, BDDK&apos;nın 26.09.2024
-        tarihli ve 10970 sayılı kararı uyarınca yürürlükte olan güncel
-        oranları kullanır: kart limitiniz 50.000 TL ve altındaysa dönem
-        borcunuzun %20&apos;si, 50.000 TL&apos;nin üzerindeyse
-        %40&apos;ı asgari ödeme tutarı olarak hesaplanır. Kart limitiniz
+        asgari ödeme tutarıdır. Bu hesaplayıcı, 1 Ekim 2026 tarihli BDDK
+        kararı uyarınca yürürlükte olan güncel oranları kullanır: kart
+        limitiniz 100.000 TL ve altındaysa dönem borcunuzun %20&apos;si,
+        100.000 TL&apos;nin üzerindeyse %40&apos;ı asgari ödeme tutarı
+        olarak hesaplanır. Kart limitiniz
         ve dönem borcunuzu girerek, ödemeniz gereken asgari tutarı ve bu
         ödeme sonrası kalan bakiyenizi anında görebilirsiniz. Kredi
         kartı borcunu yönetmekte zorlanan, asgari ödeme ile devam

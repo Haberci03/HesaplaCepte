@@ -7,7 +7,7 @@ export const SALARY_FAQ_ITEMS: FaqItem[] = [
   {
     question: "2026 gelir vergisi dilimleri nelerdir?",
     answer:
-      "0 - 190.000 TL için %15, 190.000 - 400.000 TL için %20, 400.000 - 950.000 TL için %27, 950.000 - 3.000.000 TL için %35 ve 3.000.000 TL üzeri için %40 oranı uygulanır. Vergi, dilim usulüyle (artan oranlı) hesaplanır; yani tüm gelir en yüksek dilimin oranından değil, her dilime isabet eden kısım kendi oranından vergilendirilir.",
+      "Ücret gelirlerine uygulanan tarifeye göre 0 - 190.000 TL için %15, 190.000 - 400.000 TL için %20, 400.000 - 1.500.000 TL için %27, 1.500.000 - 5.300.000 TL için %35 ve 5.300.000 TL üzeri için %40 oranı uygulanır. Vergi, dilim usulüyle (artan oranlı) hesaplanır; yani tüm gelir en yüksek dilimin oranından değil, her dilime isabet eden kısım kendi oranından vergilendirilir.",
   },
   {
     question: "SGK ve işsizlik sigortası kesintisi nasıl hesaplanır?",
@@ -291,9 +291,9 @@ export const RENT_INCREASE_FAQ_ITEMS: FaqItem[] = [
       "Yeni kira, mevcut kiranın (1 + oran ÷ 100) ile çarpılmasıyla bulunur: Yeni Kira = Mevcut Kira × (1 + Oran ÷ 100). Konut kiralarında bu oran, TÜFE'nin 12 aylık ortalamalara göre değişim oranını aşamaz.",
   },
   {
-    question: "Varsayılan %34,88 oranı neyi ifade ediyor?",
+    question: "Varsayılan %31,49 oranı neyi ifade ediyor?",
     answer:
-      "Bu oran, Aralık 2025 döneminde TÜİK tarafından açıklanan TÜFE 12 aylık ortalamalara göre değişim oranıdır ve konut kira artışlarında uygulanabilecek yasal üst sınırı belirler. Bu oran her ay güncellenir.",
+      "Bu oran, Eylül 2026 dönemi için TÜİK tarafından açıklanan TÜFE 12 aylık ortalamalara göre değişim oranıdır ve Ekim 2026'da yenilenen konut kira sözleşmelerinde uygulanabilecek yasal üst sınırı belirler. TÜİK bu oranı her ay yeniden açıkladığından, farklı bir ayda yenilenen sözleşmeler için o ayın oranı geçerlidir.",
   },
   {
     question: "Bu oranı neden güncellemem gerekebilir?",
@@ -311,7 +311,7 @@ export const CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS: FaqItem[] = [
   {
     question: "Kredi kartı asgari ödeme tutarı nasıl hesaplanır?",
     answer:
-      "BDDK'nın 26.09.2024 tarihli 10970 sayılı kararına göre: kart limitiniz 50.000 TL ve altındaysa asgari ödeme, dönem borcunuzun %20'sidir; kart limitiniz 50.000 TL'nin üzerindeyse asgari ödeme dönem borcunuzun %40'ıdır.",
+      "1 Ekim 2026 tarihli BDDK kararına göre: kart limitiniz 100.000 TL ve altındaysa asgari ödeme, dönem borcunuzun %20'sidir; kart limitiniz 100.000 TL'nin üzerindeyse asgari ödeme dönem borcunuzun %40'ıdır.",
   },
   {
     question: "Sadece asgari ödeme yaparsam ne olur?",
@@ -344,7 +344,7 @@ export const TITLE_DEED_FEE_FAQ_ITEMS: FaqItem[] = [
   {
     question: "Döner sermaye bedeli nedir?",
     answer:
-      "Döner sermaye bedeli, tapu işlemleri sırasında harç dışında ayrıca alınan sabit bir hizmet bedelidir ve il/bölgeye göre değişebilir. Bu hesaplayıcıda yaklaşık bir tutar gösterilmektedir; kesin tutarı işlemi yapacağınız Tapu Sicil Müdürlüğü'nden öğrenebilirsiniz.",
+      "Döner sermaye bedeli, tapu işlemleri sırasında harç dışında ayrıca alınan bir hizmet bedelidir. TKGM'nin 2026 gösterge tutarı olan 2.227 TL'nin, işlemin yapıldığı tapu müdürlüğünün yöresel katsayısıyla çarpılmasıyla bulunur. Bu nedenle müdürlüğe göre yaklaşık 2.200 TL ile 6.700 TL arasında değişir; büyük şehirlerde üst uca yakındır. Kesin tutarı işlemi yapacağınız tapu müdürlüğünden öğrenebilirsiniz.",
   },
   {
     question: "Bu hesaplayıcı kesin ve resmi bir tutar verir mi?",

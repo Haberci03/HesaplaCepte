@@ -97,9 +97,9 @@ export default function CreditCardMinPaymentCalculator() {
           </div>
 
           <p className="text-xs leading-relaxed text-black/50 dark:text-white/50">
-            Hesaplama, BDDK&apos;nın 26.09.2024 tarihli 10970 sayılı kararına
-            göre yapılmıştır: kart limiti 50.000 TL ve altındaysa asgari
-            ödeme dönem borcunun %20&apos;si, 50.000 TL üzerindeyse %40&apos;ıdır.
+            Hesaplama, 1 Ekim 2026 tarihli BDDK kararına göre yapılmıştır:
+            kart limiti 100.000 TL ve altındaysa asgari ödeme dönem borcunun
+            %20&apos;si, 100.000 TL üzerindeyse %40&apos;ıdır.
           </p>
         </div>
       )}
