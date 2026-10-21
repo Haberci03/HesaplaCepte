@@ -128,6 +128,29 @@ export const ANNUAL_LEAVE_FAQ_ITEMS: FaqItem[] = [
   },
 ];
 
+export const ANNUAL_LEAVE_PAY_FAQ_ITEMS: FaqItem[] = [
+  {
+    question: "Yıllık izin ücreti nasıl hesaplanır?",
+    answer:
+      "Son aylık brüt ücret 30'a bölünerek günlük brüt ücret bulunur ve bu tutar kullanılmamış izin günü sayısıyla çarpılır: Brüt İzin Ücreti = (Aylık Brüt Ücret ÷ 30) × Kullanılmamış İzin Günü. Çıkan brüt tutardan normal maaştaki gibi SGK primi, gelir vergisi ve damga vergisi kesilir.",
+  },
+  {
+    question: "İşten ayrılırken kullanılmayan izin ücreti alınır mı?",
+    answer:
+      "Evet. İş sözleşmesi sona erdiğinde, sona erme nedeni ne olursa olsun hak kazanılmış ve kullanılmamış yıllık izin günlerinin ücreti çalışana ödenir. İstifa, işveren tarafından fesih veya anlaşmalı ayrılık bu hakkı ortadan kaldırmaz.",
+  },
+  {
+    question: "Yıllık izin ücreti kıdem tazminatıyla birlikte alınır mı?",
+    answer:
+      "Evet, şartları sağlanıyorsa ikisi birlikte alınabilir. Kıdem tazminatı ve kullanılmamış izin ücreti birbirinden bağımsız iki ayrı alacaktır; ayrı hesaplanır ve ayrı kesintilere tabidir. Kıdem tazminatına hak kazanılmasa bile kullanılmamış izin ücreti ödenir.",
+  },
+  {
+    question: "Bu hesaplayıcı neden net tutar göstermiyor?",
+    answer:
+      "Yıllık izin ücretinden yapılan gelir vergisi kesintisi, o yıl içinde biriken kümülatif vergi matrahına ve bordrodaki diğer kalemlere göre değişir. Bu nedenle aynı brüt tutar farklı kişilerde farklı net tutara karşılık gelebilir. Hesaplayıcı yalnızca brüt tutarı gösterir; kesinti ayrıntıları için maaş hesaplama aracını veya bordronuzu inceleyebilirsiniz.",
+  },
+];
+
 export const NOTICE_PAY_FAQ_ITEMS: FaqItem[] = [
   {
     question: "İhbar tazminatı nedir ve kimler hak kazanır?",

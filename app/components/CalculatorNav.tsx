@@ -35,7 +35,11 @@ const CATEGORIES: { title: string; hrefs: Href[] }[] = [
   },
   {
     title: "İş Hukuku",
-    hrefs: ["/yillik-izin-hesaplama", "/ihbar-tazminati-hesaplama"],
+    hrefs: [
+      "/yillik-izin-hesaplama",
+      "/yillik-izin-ucreti-hesaplama",
+      "/ihbar-tazminati-hesaplama",
+    ],
   },
   {
     title: "Kredi & Yatırım",

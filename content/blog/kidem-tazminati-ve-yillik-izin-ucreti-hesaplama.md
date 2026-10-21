@@ -55,6 +55,6 @@ Son aylık brüt ücret 30'a bölünerek günlük brüt ücret bulunur ve bu tut
 
 ## Kendi Durumunuzu Hesaplayın
 
-Brüt ücretinizi ve çalışma sürenizi girerek kıdem tazminatınızı öğrenmek için [kıdem tazminatı hesaplayıcımızı](/kidem-tazminati-hesaplama), kaç gün yıllık izin hakkınız olduğunu görmek için ise [yıllık izin hesaplayıcımızı](/yillik-izin-hesaplama) kullanabilirsiniz.
+Brüt ücretinizi ve çalışma sürenizi girerek kıdem tazminatınızı öğrenmek için [kıdem tazminatı hesaplayıcımızı](/kidem-tazminati-hesaplama), kaç gün yıllık izin hakkınız olduğunu görmek için [yıllık izin hesaplayıcımızı](/yillik-izin-hesaplama), kullanılmamış izin günlerinizin brüt ücretini bulmak için ise [yıllık izin ücreti hesaplayıcımızı](/yillik-izin-ucreti-hesaplama) kullanabilirsiniz.
 
 Bu yazı genel bilgilendirme amaçlıdır, kendi durumunuz için iş yerinizin insan kaynakları birimine veya bir uzmana danışın.

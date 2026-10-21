@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "HesaplaCepte - Ücretsiz Maaş, Vergi, Sağlık ve Finans Hesaplama Araçları",
   },
   description:
-    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı, kredi kartı asgari ödeme, tapu harcı, gecikme zammı, tarih farkı ve altın/döviz çevirme hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
+    "Maaş, KDV, kıdem tazminatı, kredi taksiti, yıllık izin, yıllık izin ücreti, ihbar tazminatı, yüzde, enflasyon, yakıt masrafı, VKİ, bileşik faiz, kira artışı, kredi kartı asgari ödeme, tapu harcı, gecikme zammı, tarih farkı ve altın/döviz çevirme hesaplama araçları. Hızlı, kolay ve güvenilir sonuçlar.",
   alternates: { canonical: "/" },
 };
 
@@ -44,6 +44,12 @@ const TOOLS = [
     title: "Yıllık İzin Hesaplama",
     description:
       "İş Kanunu Madde 53'e göre çalışma sürenize göre yıllık ücretli izin hakkınızı hesaplayın.",
+  },
+  {
+    href: "/yillik-izin-ucreti-hesaplama",
+    title: "Yıllık İzin Ücreti Hesaplama",
+    description:
+      "Brüt ücretiniz ve kullanılmamış izin günlerinize göre brüt yıllık izin ücretinizi hesaplayın.",
   },
   {
     href: "/ihbar-tazminati-hesaplama",

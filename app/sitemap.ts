@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/kidem-tazminati-hesaplama", priority: 0.9 },
     { path: "/kredi-taksit-hesaplama", priority: 0.9 },
     { path: "/yillik-izin-hesaplama", priority: 0.9 },
+    { path: "/yillik-izin-ucreti-hesaplama", priority: 0.9 },
     { path: "/ihbar-tazminati-hesaplama", priority: 0.9 },
     { path: "/yuzde-hesaplama", priority: 0.9 },
     { path: "/enflasyon-hesaplama", priority: 0.9 },

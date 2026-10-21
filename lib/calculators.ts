@@ -13,6 +13,7 @@ import {
   Home,
   FileText,
   Calendar,
+  Banknote,
   Coins,
   AlertCircle,
   type LucideIcon,
@@ -51,6 +52,12 @@ export const CALCULATORS = [
     label: "Yıllık İzin",
     category: "İş Hukuku",
     icon: CalendarDays,
+  },
+  {
+    href: "/yillik-izin-ucreti-hesaplama",
+    label: "Yıllık İzin Ücreti",
+    category: "İş Hukuku",
+    icon: Banknote,
   },
   {
     href: "/ihbar-tazminati-hesaplama",
