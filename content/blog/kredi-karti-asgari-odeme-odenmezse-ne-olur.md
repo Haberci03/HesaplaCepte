@@ -42,6 +42,8 @@ Asgari tutarı son ödeme tarihine kadar ödemezseniz bankanız kartınızı yen
 
 Evet, gecikmeler kredi kayıtlarınıza yansıyabilir ve kredi notunuzu olumsuz etkileyebilir. Bu da ileride kredi veya kart başvurularınızın değerlendirilmesinde dezavantaj oluşturabilir. Ödemelerinizi zamanında yapmak, kredi geçmişinizi korumanın en etkili yoludur.
 
+Asgari ödeme oranını belirleyen kart limiti eşiğinin nasıl değiştiğini [Kredi Kartı Asgari Ödeme Eşiği 100 Bin TL Oldu: Ne Değişti?](/blog/kredi-karti-asgari-odeme-esigi-100-bin-tl) yazımızda anlattık.
+
 ## Kendi Durumunuzu Hesaplayın
 
 Kart limitinize ve dönem borcunuza göre ödemeniz gereken asgari tutarı öğrenmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.

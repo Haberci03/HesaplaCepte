@@ -60,6 +60,8 @@ Asgari ödeme, dönem borcunuzun kart limitinize göre belirlenen ve son ödeme 
 
 Asgari tutar hiç ödenmezse neler olacağını merak ediyorsanız [Kredi Kartı Asgari Ödeme Ödenmezse Ne Olur?](/blog/kredi-karti-asgari-odeme-odenmezse-ne-olur) yazımızı okuyabilirsiniz.
 
+Asgari ödeme oranını belirleyen kart limiti eşiğinin nasıl değiştiğini [Kredi Kartı Asgari Ödeme Eşiği 100 Bin TL Oldu: Ne Değişti?](/blog/kredi-karti-asgari-odeme-esigi-100-bin-tl) yazımızda anlattık.
+
 ## Kendi Durumunuzu Hesaplayın
 
 Kart limitinize ve dönem borcunuza göre asgari ödeme tutarınızı ve bu tutarın toplam borcunuza etkisini görmek için kredi kartı asgari ödeme hesaplayıcımızı kullanabilirsiniz.
