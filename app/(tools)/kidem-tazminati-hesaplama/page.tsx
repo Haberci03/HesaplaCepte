@@ -25,7 +25,9 @@ export default function KidemTazminatiHesaplamaPage() {
           SEVERANCE_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["1475 sayılı İş Kanunu m.14"]}
+      >
         Kıdem tazminatı, en az bir yıl çalışmış ve iş sözleşmesi kanunda
         sayılan haklı nedenlerle sona ermiş bir çalışana, her tam yıl için
         işvereni tarafından ödenmesi gereken bir tazminattır. Bu

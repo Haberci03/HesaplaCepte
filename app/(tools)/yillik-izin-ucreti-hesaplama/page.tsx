@@ -28,7 +28,9 @@ export default function YillikIzinUcretiHesaplamaPage() {
           ANNUAL_LEAVE_PAY_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["4857 sayılı İş Kanunu m.59"]}
+      >
         İş sözleşmesi sona erdiğinde, hak kazanılmış ama kullanılmamış
         yıllık izin günlerinin ücreti, sözleşme hangi nedenle sona ererse
         ersin çalışana ödenir. Bu hesaplayıcı, aylık brüt ücretinizi ve
