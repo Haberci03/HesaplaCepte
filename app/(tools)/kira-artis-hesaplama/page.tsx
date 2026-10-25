@@ -25,7 +25,9 @@ export default function KiraArtisHesaplamaPage() {
           RENT_INCREASE_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["6098 sayılı Türk Borçlar Kanunu m.344", "TÜİK TÜFE 12 aylık ortalama"]}
+      >
         6098 sayılı Türk Borçlar Kanunu&apos;na göre konut ve çatılı
         işyeri kiralarında, kira sözleşmesinin yenilendiği dönemde
         uygulanabilecek azami artış oranı, bir önceki kira yılında

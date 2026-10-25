@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/tarih-farki-hesaplama", priority: 0.9 },
     { path: "/blog", priority: 0.6 },
     { path: "/hakkimizda", priority: 0.3 },
+    { path: "/guncelleme-gunlugu", priority: 0.3 },
     { path: "/gizlilik-politikasi", priority: 0.3 },
     { path: "/kvkk-aydinlatma-metni", priority: 0.3 },
     { path: "/kullanim-sartlari", priority: 0.3 },

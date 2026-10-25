@@ -25,7 +25,9 @@ export default function IhbarTazminatiHesaplamaPage() {
           NOTICE_PAY_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["4857 sayılı İş Kanunu m.17"]}
+      >
         İşveren veya işçi tarafından iş sözleşmesi feshedilirken, 4857
         sayılı İş Kanunu&apos;nun 17. maddesinde belirtilen ihbar sürelerine
         uyulmadan yapılan fesihlerde karşı tarafa ihbar tazminatı ödenmesi

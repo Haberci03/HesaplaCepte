@@ -22,7 +22,9 @@ export default function KdvHesaplamaPage() {
       <JsonLd
         data={buildCalculatorPageSchemas("/kdv-hesaplama", VAT_FAQ_ITEMS)}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["3065 sayılı Katma Değer Vergisi Kanunu m.28"]}
+      >
         KDV (Katma Değer Vergisi), Türkiye&apos;de mal ve hizmet
         teslimlerinde uygulanan ve nihai olarak tüketiciye yansıtılan
         dolaylı bir vergidir. Bu hesaplayıcı, yürürlükteki üç temel KDV

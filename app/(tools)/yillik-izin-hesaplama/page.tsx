@@ -25,7 +25,9 @@ export default function YillikIzinHesaplamaPage() {
           ANNUAL_LEAVE_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["4857 sayılı İş Kanunu m.53"]}
+      >
         4857 sayılı İş Kanunu&apos;nun 53. maddesine göre, aynı işverene
         bağlı olarak en az bir yıl çalışmış her işçiye, kıdemine göre
         değişen sürelerde yıllık ücretli izin hakkı tanınır. Bu

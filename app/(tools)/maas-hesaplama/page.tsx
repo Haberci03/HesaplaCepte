@@ -22,7 +22,9 @@ export default function MaasHesaplamaPage() {
       <JsonLd
         data={buildCalculatorPageSchemas("/maas-hesaplama", SALARY_FAQ_ITEMS)}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["193 sayılı Gelir Vergisi Kanunu m.103", "Gelir Vergisi Genel Tebliği (Seri No: 332, 31.12.2025 tarihli Resmî Gazete, 33124 (5. Mükerrer))"]}
+      >
         Net maaşınızın brüt maaşınızdan ne kadar farklı olduğunu merak
         ediyorsanız, bu hesaplayıcı size 2026 yılı gelir vergisi dilimleri ve
         SGK kesintileriyle tam bir döküm sunar. Hesaplama; %14 SGK işçi

@@ -25,7 +25,9 @@ export default function GecikmeZammiHesaplamaPage() {
           LATE_PAYMENT_SURCHARGE_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun m.51"]}
+      >
         Vadesinde ödenmeyen kamu alacaklarına (vergi, ceza, sigorta primi
         gibi) 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun
         uyarınca gecikme zammı uygulanır. Bu hesaplayıcı, 13.11.2025

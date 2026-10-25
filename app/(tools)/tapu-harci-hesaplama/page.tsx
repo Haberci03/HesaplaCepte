@@ -25,7 +25,9 @@ export default function TapuHarciHesaplamaPage() {
           TITLE_DEED_FEE_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["492 sayılı Harçlar Kanunu"]}
+      >
         Bir gayrimenkul alım satımında tapu devri sırasında, 492 sayılı
         Harçlar Kanunu&apos;na bağlı 4 sayılı tarife uyarınca hem
         alıcıdan hem satıcıdan tapu harcı tahsil edilir. Bu hesaplayıcı,

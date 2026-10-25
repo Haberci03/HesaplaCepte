@@ -25,7 +25,9 @@ export default function KrediKartiAsgariOdemeHesaplamaPage() {
           CREDIT_CARD_MIN_PAYMENT_FAQ_ITEMS
         )}
       />
-      <AboutSection>
+      <AboutSection
+        sources={["BDDK'nın 1 Ekim 2026 tarihli kararı"]}
+      >
         Kredi kartı dönem borcunuzun tamamını ödeyemediğinizde, kart
         borcunuzu temerrüde düşürmeden ödeyebileceğiniz en düşük tutar
         asgari ödeme tutarıdır. Bu hesaplayıcı, 1 Ekim 2026 tarihli BDDK

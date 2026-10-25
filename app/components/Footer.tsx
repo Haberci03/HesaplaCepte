@@ -5,6 +5,7 @@ const FOOTER_LINKS: { href: string; label: string; icon?: LucideIcon }[] = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/blog", label: "Blog", icon: BookOpen },
   { href: "/hakkimizda", label: "Hakkımızda" },
+  { href: "/guncelleme-gunlugu", label: "Güncelleme Günlüğü" },
   { href: "/gizlilik-politikasi", label: "Gizlilik Politikası" },
   { href: "/kvkk-aydinlatma-metni", label: "KVKK Aydınlatma Metni" },
   { href: "/kullanim-sartlari", label: "Kullanım Şartları" },
