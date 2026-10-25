@@ -33,14 +33,17 @@ export default function YillikIzinUcretiHesaplamaPage() {
       >
         İş sözleşmesi sona erdiğinde, hak kazanılmış ama kullanılmamış
         yıllık izin günlerinin ücreti, sözleşme hangi nedenle sona ererse
-        ersin çalışana ödenir. Bu hesaplayıcı, aylık brüt ücretinizi ve
-        kullanılmamış izin günü sayınızı girerek bu alacağın brüt tutarını
-        bulmanızı sağlar. Hesaplamada genel yöntem uygulanır: aylık brüt
-        ücret 30&apos;a bölünerek günlük brüt ücret bulunur, bu tutar da
-        kullanılmamış izin günü sayısıyla çarpılarak brüt izin ücretine
-        ulaşılır. Ödeme kural olarak son brüt ücret üzerinden yapılır; prim
-        veya yan ödemelerin hesaba katılıp katılmayacağı iş sözleşmesine ve
-        iş yeri uygulamasına göre değişebilir. Sonuç brüt tutardır. Yıllık
+        ersin çalışana ödenir. Bu hesaplayıcı, sözleşmenin sona erdiği
+        tarihteki aylık çıplak brüt ücretinizi (yemek, yol, prim gibi ek
+        ödemeler hariç temel ücret) ve kullanılmamış izin günü sayınızı
+        girerek bu alacağın brüt tutarını bulmanızı sağlar. Hesaplamada genel
+        yöntem uygulanır: aylık çıplak brüt ücret 30&apos;a bölünerek günlük
+        brüt ücret bulunur, bu tutar da kullanılmamış izin günü sayısıyla
+        çarpılarak brüt izin ücretine ulaşılır. Yasal kural, izin ücretinin
+        sözleşmenin sona erdiği tarihteki çıplak brüt ücret üzerinden
+        hesaplanmasıdır; iş sözleşmenizde ek ödemelerin de hesaba dahil
+        edileceğine dair özel bir hüküm varsa bordro birimine veya insan
+        kaynaklarına danışmalısınız. Sonuç brüt tutardır. Yıllık
         izin ücreti ücret niteliğinde olduğu için normal maaş gibi SGK
         primi, gelir vergisi ve damga vergisi kesintisine tabidir; bu
         kesintiler kişinin kümülatif vergi matrahına ve bordrosuna göre

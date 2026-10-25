@@ -132,7 +132,7 @@ export const ANNUAL_LEAVE_PAY_FAQ_ITEMS: FaqItem[] = [
   {
     question: "Yıllık izin ücreti nasıl hesaplanır?",
     answer:
-      "Son aylık brüt ücret 30'a bölünerek günlük brüt ücret bulunur ve bu tutar kullanılmamış izin günü sayısıyla çarpılır: Brüt İzin Ücreti = (Aylık Brüt Ücret ÷ 30) × Kullanılmamış İzin Günü. Çıkan brüt tutardan normal maaştaki gibi SGK primi, gelir vergisi ve damga vergisi kesilir.",
+      "Sözleşmenin sona erdiği tarihteki aylık çıplak brüt ücret (yemek, yol, prim gibi ek ödemeler hariç temel ücret) 30'a bölünerek günlük brüt ücret bulunur ve bu tutar kullanılmamış izin günü sayısıyla çarpılır: Brüt İzin Ücreti = (Aylık Çıplak Brüt Ücret ÷ 30) × Kullanılmamış İzin Günü. Çıkan brüt tutardan normal maaştaki gibi SGK primi, gelir vergisi ve damga vergisi kesilir.",
   },
   {
     question: "İşten ayrılırken kullanılmayan izin ücreti alınır mı?",

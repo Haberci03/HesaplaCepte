@@ -27,7 +27,7 @@ export default function AnnualLeavePayCalculator() {
       <div className="grid gap-4 sm:grid-cols-[2fr_1fr]">
         <label className="block">
           <span className="mb-1.5 block text-sm font-medium text-black/70 dark:text-white/70">
-            Aylık Brüt Ücret
+            Aylık çıplak brüt ücret
           </span>
           <div className="relative">
             <input
@@ -42,6 +42,10 @@ export default function AnnualLeavePayCalculator() {
               ₺
             </span>
           </div>
+          <span className="mt-1.5 block text-xs leading-relaxed text-black/50 dark:text-white/50">
+            Sözleşmenin sona erdiği tarihteki temel brüt ücretiniz; yemek,
+            yol, prim gibi ek ödemeler hariç.
+          </span>
         </label>
 
         <label className="block">
@@ -72,7 +76,10 @@ export default function AnnualLeavePayCalculator() {
           </div>
 
           <dl className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm sm:grid-cols-3">
-            <Row label="Aylık Brüt Ücret" value={formatTL(result.brutMaas)} />
+            <Row
+              label="Aylık Çıplak Brüt Ücret"
+              value={formatTL(result.brutMaas)}
+            />
             <Row
               label="Günlük Brüt Ücret"
               value={formatTL(result.gunlukBrutUcret)}
@@ -81,7 +88,9 @@ export default function AnnualLeavePayCalculator() {
           </dl>
 
           <p className="text-xs leading-relaxed text-black/50 dark:text-white/50">
-            Günlük brüt ücret, aylık brüt ücretin 30&apos;a bölünmesiyle;
+            Günlük brüt ücret, sözleşmenin sona erdiği tarihteki aylık çıplak
+            brüt ücretin (yemek, yol, prim gibi ek ödemeler hariç temel ücret)
+            30&apos;a bölünmesiyle;
             brüt izin ücreti ise günlük brüt ücretin kullanılmamış izin günü
             sayısıyla çarpılmasıyla bulunur. Gösterilen tutar brüttür. Yıllık
             izin ücretinden normal maaş gibi SGK primi, gelir vergisi ve damga

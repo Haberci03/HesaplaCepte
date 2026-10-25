@@ -18,12 +18,12 @@ Kıdem tazminatına hangi durumlarda hak kazanıldığını öğrenmek için [K�
 
 Genel yöntem şöyledir:
 
-- **Günlük brüt ücret** = Aylık brüt ücret / 30
+- **Günlük brüt ücret** = Aylık çıplak brüt ücret / 30
 - **İzin ücreti** = Günlük brüt ücret x Kullanılmamış izin günü sayısı
 
-Ödeme, çalışanın **son brüt ücreti** üzerinden yapılır. Prim, yemek, yol gibi ek ödemelerin hesaba dahil edilip edilmediği iş yerine ve iş sözleşmesine göre değişebilir; bu konuyu bordro veya insan kaynakları birimine sormanız gerekir.
+Hesaplama, sözleşmenin sona erdiği tarihteki **çıplak brüt ücret** üzerinden yapılır; yani yemek, yol, prim gibi ek ödemeler hariç temel ücret esas alınır. Yasal kural budur. İş sözleşmenizde ek ödemelerin de hesaba dahil edileceğine dair özel bir hüküm varsa bu konuyu bordro veya insan kaynakları birimine sormanız gerekir.
 
-**Örnek (varsayımsal rakamlarla):** Aylık brüt ücreti 30.000 TL olan bir çalışanın günlük brüt ücreti 30.000 / 30 = 1.000 TL olur. Bu çalışanın 12 gün kullanılmamış izni varsa, brüt izin ücreti 1.000 x 12 = **12.000 TL** olur. Bu rakamlar yalnızca yöntemi göstermek için seçilmiş örnek değerlerdir.
+**Örnek (varsayımsal rakamlarla):** Aylık çıplak brüt ücreti 30.000 TL olan bir çalışanın günlük brüt ücreti 30.000 / 30 = 1.000 TL olur. Bu çalışanın 12 gün kullanılmamış izni varsa, brüt izin ücreti 1.000 x 12 = **12.000 TL** olur. Bu rakamlar yalnızca yöntemi göstermek için seçilmiş örnek değerlerdir.
 
 Kaç gün yıllık izin hakkınız olduğunu öğrenmek için [yıllık izin hesaplayıcımızı](/yillik-izin-hesaplama) kullanabilirsiniz.
 
@@ -47,7 +47,7 @@ Evet, şartları sağlıyorsanız ikisini birlikte alabilirsiniz. Bu iki kalem b
 
 ### Yıllık izin ücreti (izin tazminatı) nasıl hesaplanır?
 
-Son aylık brüt ücret 30'a bölünerek günlük brüt ücret bulunur ve bu tutar kullanılmamış izin günü sayısıyla çarpılır. Çıkan brüt tutardan normal maaştaki gibi kesintiler yapılır.
+Sözleşmenin sona erdiği tarihteki aylık çıplak brüt ücret (yemek, yol, prim gibi ek ödemeler hariç temel ücret) 30'a bölünerek günlük brüt ücret bulunur ve bu tutar kullanılmamış izin günü sayısıyla çarpılır. Çıkan brüt tutardan normal maaştaki gibi kesintiler yapılır.
 
 ### Kullanılmayan yıllık izin ücreti hangi durumlarda ödenir?
 
