@@ -3,7 +3,7 @@
 // Bir değer güncellendiğinde ilgili yorum satırındaki dönemi ve LAST_UPDATED'ı da güncelleyin.
 
 // Bu sabitlerin en son kontrol edildiği/güncellendiği tarih.
-export const LAST_UPDATED = "21 Ekim 2026";
+export const LAST_UPDATED = "13 Kasım 2026";
 
 // Gelir vergisi dilimleri, ücret gelirleri tarifesi (yıllık kümülatif matrah üzerinden)
 // Dönem: 2026 tam yılı, 01.01.2026 - 31.12.2026
@@ -91,8 +91,8 @@ export const BMI_CATEGORIES = [
 ] as const;
 
 // Kira artışında uygulanabilecek TÜFE 12 aylık ortalama değişim oranı (%)
-// Dönem: Eylül 2026 TÜİK verisi, Ekim 2026'da yenilenen sözleşmeler için üst sınır - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
-export const RENT_INCREASE_TUFE_RATE_DEFAULT = 31.49;
+// Dönem: Ekim 2026 TÜİK verisi (3 Kasım 2026), Kasım 2026'da yenilenen sözleşmeler için üst sınır - TÜİK bu oranı her ay günceller, işlem ayındaki güncel oran kontrol edilmelidir
+export const RENT_INCREASE_TUFE_RATE_DEFAULT = 31.23;
 
 // Kredi kartı asgari ödeme tutarı için limit eşiği ve oranları
 // Kaynak: 1 Ekim 2026 tarihli BDDK kararı (limit eşiği 50.000 TL'den 100.000 TL'ye çıkarıldı, oranlar değişmedi)

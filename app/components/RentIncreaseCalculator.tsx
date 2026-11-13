@@ -81,9 +81,10 @@ export default function RentIncreaseCalculator() {
           </dl>
 
           <p className="text-xs leading-relaxed text-amber-700 dark:text-amber-400">
-            Varsayılan %31,49 oranı, Ekim 2026 yenilemeleri için geçerli olan
-            yasal üst sınırdır (Eylül 2026 itibarıyla TÜFE 12 aylık
-            ortalamalara göre değişim oranı). Bu oran her ay TÜİK&apos;in
+            Varsayılan %31,23 oranı, Kasım 2026 yenilemeleri için geçerli olan
+            yasal üst sınırdır (Ekim 2026 itibarıyla TÜFE 12 aylık
+            ortalamalara göre değişim oranı). Bir sonraki oran 3 Aralık
+            2026&apos;da açıklanacaktır. Bu oran her ay TÜİK&apos;in
             açıkladığı yeni orana göre değişir; sözleşmeniz başka bir ayda
             yenileniyorsa o ay için geçerli oranı TÜİK&apos;in resmi
             verilerinden kontrol edip yukarıdaki alana girin.

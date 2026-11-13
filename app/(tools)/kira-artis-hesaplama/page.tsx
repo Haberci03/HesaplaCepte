@@ -34,9 +34,10 @@ export default function KiraArtisHesaplamaPage() {
         tüketici fiyat endeksindeki on iki aylık ortalamalara göre
         değişim oranını geçemez. Bu hesaplayıcı, mevcut kira tutarınızı
         girip TÜFE oranını kullanarak yeni kira tutarınızı ve artış
-        miktarını hesaplamanızı sağlar; varsayılan olarak Eylül 2026
-        TÜİK verisine göre açıklanan ve Ekim 2026&apos;da yenilenen
-        sözleşmeler için üst sınır olan %31,49&apos;luk on iki aylık
+        miktarını hesaplamanızı sağlar; varsayılan olarak Ekim 2026
+        TÜİK verisine göre 3 Kasım 2026&apos;da açıklanan ve Kasım
+        2026&apos;da yenilenen sözleşmeler için üst sınır olan
+        %31,23&apos;lük on iki aylık
         ortalama TÜFE değişim oranı önerilir, ancak bu oranı TÜİK&apos;in
         güncel aylık açıklamasına göre kendiniz de değiştirebilirsiniz.
         TÜİK bu oranı her ay yeniden açıkladığından, kira yenileme

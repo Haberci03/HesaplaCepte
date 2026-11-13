@@ -24,6 +24,18 @@ Sözleşmede daha düşük bir artış oranı belirlenmiş olabilir — bu durum
 
 Taraflar yeni kira bedeli konusunda anlaşamazsa, ev sahibi "kira tespit davası" açarak mahkemeden güncel kira bedelinin belirlenmesini isteyebilir. Mahkeme, emsal kira bedellerini ve yasal artış sınırlarını dikkate alarak karar verir.
 
+## 2026 Aylık Kira Artış Oranları
+
+| Sözleşme yenileme ayı | Uygulanabilecek en yüksek oran |
+| --- | --- |
+| Temmuz 2026 | %32,03 |
+| Ağustos 2026 | %31,90 |
+| Eylül 2026 | %31,79 |
+| Ekim 2026 | %31,49 |
+| Kasım 2026 | %31,23 |
+
+Oran, TÜİK'in her ayın başında açıkladığı 12 aylık TÜFE ortalamasına göre belirlenir. Aralık 2026'da yenilenecek sözleşmeler için geçerli oran 3 Aralık 2026'da açıklanacaktır. Bu tablo her ay güncellenmektedir.
+
 ## Kendi Hesabınızı Yapın
 
 Mevcut kira tutarınızı girerek, güncel TÜFE 12 aylık ortalama oranına göre yasal olarak uygulanabilecek maksimum yeni kira tutarını öğrenmek için kira artışı hesaplayıcımızı kullanabilirsiniz. Güncel oranı güncelleyerek farklı senaryoları da deneyebilirsiniz.

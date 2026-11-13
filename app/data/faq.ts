@@ -291,9 +291,9 @@ export const RENT_INCREASE_FAQ_ITEMS: FaqItem[] = [
       "Yeni kira, mevcut kiranın (1 + oran ÷ 100) ile çarpılmasıyla bulunur: Yeni Kira = Mevcut Kira × (1 + Oran ÷ 100). Konut kiralarında bu oran, TÜFE'nin 12 aylık ortalamalara göre değişim oranını aşamaz.",
   },
   {
-    question: "Varsayılan %31,49 oranı neyi ifade ediyor?",
+    question: "Varsayılan %31,23 oranı neyi ifade ediyor?",
     answer:
-      "Bu oran, Eylül 2026 dönemi için TÜİK tarafından açıklanan TÜFE 12 aylık ortalamalara göre değişim oranıdır ve Ekim 2026'da yenilenen konut kira sözleşmelerinde uygulanabilecek yasal üst sınırı belirler. TÜİK bu oranı her ay yeniden açıkladığından, farklı bir ayda yenilenen sözleşmeler için o ayın oranı geçerlidir.",
+      "Bu oran, Ekim 2026 dönemi için TÜİK tarafından 3 Kasım 2026'da açıklanan TÜFE 12 aylık ortalamalara göre değişim oranıdır ve Kasım 2026'da yenilenen konut kira sözleşmelerinde uygulanabilecek yasal üst sınırı belirler. Bir sonraki oran 3 Aralık 2026'da açıklanacaktır. TÜİK bu oranı her ay yeniden açıkladığından, farklı bir ayda yenilenen sözleşmeler için o ayın oranı geçerlidir.",
   },
   {
     question: "Bu oranı neden güncellemem gerekebilir?",

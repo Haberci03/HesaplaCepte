@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 // En yeni kayıt en üstte olacak şekilde ekleyin.
 const CHANGELOG: { date: string; items: string[] }[] = [
   {
+    date: "13 Kasım 2026",
+    items: [
+      "Kira artışı varsayılan oranı Kasım 2026 için %31,23'e güncellendi (TÜİK, 3 Kasım 2026).",
+    ],
+  },
+  {
     date: "21 Ekim 2026",
     items: [
       "Kredi kartı asgari ödeme: limit eşiği 50.000 TL'den 100.000 TL'ye çıkarıldı (BDDK, 1 Ekim 2026), oranlar %20 ve %40 aynı.",
