@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CompoundInterestCalculator from "@/app/components/CompoundInterestCalculator";
 import AboutSection from "@/app/components/AboutSection";
 import Faq from "@/app/components/Faq";
@@ -45,7 +46,15 @@ export default function BilesikFaizHesaplamaPage() {
         güncel faiz oranını içermez; girdiğiniz oran tamamen sizin
         belirlediğiniz veya araştırdığınız bir varsayımdır. Bu nedenle
         sonuçlar bir yatırım tavsiyesi değil, farklı senaryoları
-        karşılaştırmanıza yardımcı olacak bir simülasyondur.
+        karşılaştırmanıza yardımcı olacak bir simülasyondur. Formülün
+        ayrıntıları ve örnek hesaplamalar için{" "}
+        <Link
+          href="/blog/bilesik-faiz-nedir-nasil-hesaplanir"
+          className="underline hover:text-black dark:hover:text-white"
+        >
+          bileşik faiz nedir, nasıl hesaplanır
+        </Link>{" "}
+        yazımızı okuyabilirsiniz.
       </AboutSection>
       <CompoundInterestCalculator />
       <Disclaimer />
