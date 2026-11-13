@@ -33,7 +33,9 @@ export default function YillikIzinUcretiHesaplamaPage() {
       >
         İş sözleşmesi sona erdiğinde, hak kazanılmış ama kullanılmamış
         yıllık izin günlerinin ücreti, sözleşme hangi nedenle sona ererse
-        ersin çalışana ödenir. Bu hesaplayıcı, sözleşmenin sona erdiği
+        ersin çalışana ödenir. Halk arasında kullanılmayan izin ücreti
+        veya izin parası olarak da bilinen bu alacak, İş Kanunu&apos;nun
+        59. maddesinde düzenlenmiştir. Bu hesaplayıcı, sözleşmenin sona erdiği
         tarihteki aylık çıplak brüt ücretinizi (yemek, yol, prim gibi ek
         ödemeler hariç temel ücret) ve kullanılmamış izin günü sayınızı
         girerek bu alacağın brüt tutarını bulmanızı sağlar. Hesaplamada genel

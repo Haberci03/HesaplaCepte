@@ -12,7 +12,7 @@ import { ANNUAL_LEAVE_FAQ_ITEMS } from "@/app/data/faq";
 export const metadata: Metadata = {
   title: "Yıllık İzin Hesaplama - Kaç Gün İzin Hakkınız Var?",
   description:
-    "İş Kanunu Madde 53'e göre çalışma sürenize göre yıllık ücretli izin hakkınızı (14, 20 veya 26 gün) ücretsiz hesaplayın.",
+    "İş Kanunu Madde 53'e göre çalışma sürenize göre yıllık ücretli izin (senelik izin) hakkınızı (14, 20 veya 26 gün) ücretsiz hesaplayın. İşçi izin hakkı ve personel yıllık izin süreleri.",
   alternates: { canonical: "/yillik-izin-hesaplama" },
 };
 
@@ -47,7 +47,10 @@ export default function YillikIzinHesaplamaPage() {
         Sonuçlar, işyerinde toplu iş sözleşmesi veya bireysel
         sözleşmeyle kanuni asgari sürenin üzerinde bir izin hakkı
         tanınmış olma ihtimalini kapsamaz; bu gibi durumlarda sözleşme
-        hükümleri esas alınmalıdır.
+        hükümleri esas alınmalıdır. Yıllık ücretli izin, halk arasında
+        senelik izin olarak da anılır; bu sayfadaki hesaplama, işçi izin
+        hakkı ve personel yıllık izin süreleri için kanunda öngörülen
+        asgari süreleri esas alır.
       </AboutSection>
       <AnnualLeaveCalculator />
       <Disclaimer />
