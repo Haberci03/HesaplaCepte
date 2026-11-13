@@ -28,6 +28,20 @@ KDV hariç fiyatı biliyorsanız, KDV dahil fiyatı bulmak için oranı eklemeni
 
 Örneğin %20 KDV oranında: 1.000 TL x 1,20 = 1.200 TL.
 
+## KDV Tablosu: Dahil Tutardan Hariç Tutar ve KDV
+
+Aşağıdaki tabloda KDV hariç tutar, KDV hariç = KDV dahil / (1 + oran) formülüyle; KDV tutarı ise KDV dahil tutardan KDV hariç tutarın çıkarılmasıyla bulunmuştur. Sonuçlar iki ondalığa yuvarlanmıştır.
+
+| KDV dahil tutar | %20'de KDV hariç tutar ve KDV | %10'da KDV hariç tutar ve KDV |
+| --- | --- | --- |
+| 100 TL | 83,33 TL + 16,67 TL KDV | 90,91 TL + 9,09 TL KDV |
+| 500 TL | 416,67 TL + 83,33 TL KDV | 454,55 TL + 45,45 TL KDV |
+| 1.000 TL | 833,33 TL + 166,67 TL KDV | 909,09 TL + 90,91 TL KDV |
+| 5.000 TL | 4.166,67 TL + 833,33 TL KDV | 4.545,45 TL + 454,55 TL KDV |
+| 10.000 TL | 8.333,33 TL + 1.666,67 TL KDV | 9.090,91 TL + 909,09 TL KDV |
+
+KDV hariç tutarı, KDV dahil tutardan doğrudan %20 çıkararak bulmak yanlıştır; örneğin 1.000 TL'den %20 çıkarıldığında 800 TL bulunur, oysa doğru KDV hariç tutar 833,33 TL'dir. Tabloda olmayan tutarlar için [KDV hesaplayıcımızı](/kdv-hesaplama) kullanabilirsiniz.
+
 ## Yaygın Hata: Dahil Tutardan Doğrudan Yüzde Çıkarmak
 
 1.200 TL'den doğrudan %20 çıkarırsanız 960 TL bulursunuz, ancak doğru KDV hariç fiyat 1.000 TL'dir. Bunun sebebi, %20 KDV'nin KDV hariç fiyatın üzerine eklenmesidir; KDV dahil fiyatın üzerinden alınmaz. Bu yüzden ayırma işleminde çıkarma değil, bölme yapılmalıdır.
@@ -49,6 +63,10 @@ KDV hariç fiyat, KDV oranıyla çarpılarak KDV tutarı bulunur. Örneğin 1.00
 ### Faturada KDV'yi nasıl ayırırım?
 
 Faturada genellikle KDV hariç tutar ve KDV tutarı ayrı satırlarda gösterilir; önce bu satırlara bakmanız yeterlidir. Elinizde yalnızca KDV dahil toplam varsa, toplamı (1 + KDV oranı) ile bölerek KDV hariç tutarı bulabilir, aradaki farkla KDV tutarını hesaplayabilirsiniz.
+
+### KDV dahil 1.000 TL'nin KDV'si kaç TL?
+
+KDV dahil 1.000 TL'lik bir tutarda %20 oranında KDV 166,67 TL, KDV hariç tutar ise 833,33 TL'dir. %10 oranında KDV 90,91 TL, KDV hariç tutar 909,09 TL olur.
 
 ## Kendi Hesabınızı Yapın
 

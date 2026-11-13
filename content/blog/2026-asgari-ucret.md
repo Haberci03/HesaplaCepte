@@ -27,6 +27,16 @@ Kendi maaşınızın net karşılığını ve yıl boyunca hangi aylarda vergi d
 
 Asgari ücret Türkiye'de genellikle yılda bir kez, Ocak ayı başında güncellenir. Asgari Ücret Tespit Komisyonu'nun aldığı kararla belirlenir ve Resmi Gazete'de yayımlanır.
 
+## 2026 Asgari Ücret: Aylık, Günlük ve Saatlik Tutarlar
+
+| Dönem | Brüt | Net |
+| --- | --- | --- |
+| Aylık | 33.030,00 TL | 28.075,50 TL |
+| Günlük | 1.101,00 TL | 935,85 TL |
+| Saatlik | 146,80 TL | 124,78 TL |
+
+Günlük tutarlar aylık tutarın 30'a bölünmesiyle bulunmuştur. Saatlik tutarlarda yaygın kullanılan 225 saatlik aylık çalışma varsayımı (günde 7,5 saat × 30 gün) esas alınmıştır. İş yerindeki gerçek hesap, iş sözleşmesine ve çalışma düzenine göre değişebilir.
+
 ## Sık Sorulan Sorular
 
 ### 2026 brüt asgari ücret ne kadar?
