@@ -12,7 +12,7 @@ relatedCalculator: "/maas-hesaplama"
 
 ## Rakamlar Nasıl Belirlenir?
 
-Gelir vergisi dilimlerinin yıllık artışı, **Yeniden Değerleme Oranı (YDO)** esas alınarak hesaplanır. Bu oran, Hazine ve Maliye Bakanlığı tarafından her yıl Kasım ayında açıklanır ve bir önceki yılın Ekim ayı enflasyon verilerine dayanır. YDO kesinleştikten sonra, gelir vergisi dilimleri de buna paralel olarak güncellenir.
+Gelir vergisi dilimlerinin yıllık artışı, **Yeniden Değerleme Oranı (YDO)** esas alınarak hesaplanır. Vergi Usul Kanunu mükerrer 298. maddesine göre bu oran, yeniden değerleme yapılacak yılın Ekim ayı dahil **Yurt İçi Üretici Fiyat Endeksi'ndeki (Yİ-ÜFE) on iki aylık ortalamalara göre değişim oranıdır**; tüketici enflasyonu (TÜFE) ile karıştırılmamalıdır. TÜİK Ekim ayı verisini Kasım başında açıkladığında oran hesaplanabilir hale gelir, resmî ilanı ise Hazine ve Maliye Bakanlığı tebliğiyle Resmî Gazete'de yapılır. YDO kesinleştikten sonra, gelir vergisi dilimleri de buna paralel olarak güncellenir.
 
 ## İlk Dilim İçin Tahmin
 
