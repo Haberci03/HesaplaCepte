@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CreditCardMinPaymentCalculator from "@/app/components/CreditCardMinPaymentCalculator";
 import AboutSection from "@/app/components/AboutSection";
 import Faq from "@/app/components/Faq";
@@ -47,7 +48,15 @@ export default function KrediKartiAsgariOdemeHesaplamaPage() {
         için ödenmesi gereken asgari tutarı gösterir; sonraki
         dönemlerde faiz işlemiş bakiye üzerinden hesaplanacak yeni
         asgari ödeme tutarını içermez. BDDK oranları zaman zaman
-        değişebildiğinden güncelliğini teyit etmenizi öneririz.
+        değişebildiğinden güncelliğini teyit etmenizi öneririz. Formül ve
+        örnek tablo için{" "}
+        <Link
+          href="/blog/kredi-karti-asgari-odeme-tutari-nasil-hesaplanir"
+          className="underline hover:text-black dark:hover:text-white"
+        >
+          kredi kartı asgari ödeme tutarı nasıl hesaplanır
+        </Link>{" "}
+        yazımızı okuyabilirsiniz.
       </AboutSection>
       <CreditCardMinPaymentCalculator />
       <Disclaimer />

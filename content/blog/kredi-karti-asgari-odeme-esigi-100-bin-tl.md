@@ -56,6 +56,8 @@ Kart limitiniz 100.000 TL'nin üzerindeyse asgari ödeme dönem borcunuzun %40'�
 
 Limiti 50.000 TL olan bir kartta asgari ödeme dönem borcunun %20'sidir. Bu limit hem eski hem de yeni kuralda %20 oranına tabi olduğu için değişiklik yoktur.
 
+Formülü ve farklı limitler için örnek tabloyu [kredi kartı asgari ödeme tutarı nasıl hesaplanır](/blog/kredi-karti-asgari-odeme-tutari-nasil-hesaplanir) yazımızda bulabilirsiniz.
+
 ## Kendi Durumunuzu Hesaplayın
 
 Kart limitinizi ve dönem borcunuzu girerek ödemeniz gereken asgari tutarı ve kalan bakiyenizi görmek için [kredi kartı asgari ödeme hesaplayıcımızı](/kredi-karti-asgari-odeme-hesaplama) kullanabilirsiniz. Hesaplayıcı, 100.000 TL'lik güncel eşikle çalışır.
